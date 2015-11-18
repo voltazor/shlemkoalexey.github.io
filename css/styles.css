@@ -1,6 +1,43 @@
 .container{
-	background-color: lightgray;
-	border: 1px solid gray;
-	margin-bottom: 10px;
-	margin-top: -1px;
+	padding: 0;
+}
+.header-contacts{
+	background-color: #77B9BF; 
+	height: 200px;
+	padding-top: 90px;
+}
+.header-contacts div{
+	background-color: white;
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	vertical-align: middle;
+}
+.header-contacts div span{
+	display: inline-block;
+	width: 10%;	
+}
+.header-contacts div span:nth-child(1),
+.header-contacts div span:nth-child(2){
+	margin-right: 10%;
+}
+.header-contacts div span:nth-child(4),
+.header-contacts div span:nth-child(5){
+	margin-left: 10%;
+}
+.main-text{
+	background-color: pink;
+	width: 70%;
+	text-align: center;
+	margin-left: 15%;
+}
+.col-md-5{
+
+	height: 100px;
+}
+.education{
+	text-align: left;
+}
+.workexpirience{
+	text-align: right;
 }
