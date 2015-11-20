@@ -1,64 +1,129 @@
+/*
+colors
+gray frame in header - #e7e7e7
+gray text in header - #606676
+footer blue - #1268b3
+text middle gray - #676975
+text footer gray - #fdfdff
+*/
+
+
+body{
+	color: #606676;
+}
+
 .container{
 	padding: 0;
 }
-.header-contacts{
 
-	height: 425px;
-	padding-top: 90px;
-	background-image: url('../src/header-background.png');
+
+
+/*HEADER*/
+
+.header{
+	min-width: 900px;
+}
+.header-top{
+	height: 100px;
 	background-size: 100%;
+	background-image: url('../src/header-background.png');
+	border-bottom: 10px solid #e7e7e7;
 }
-.header-contacts div{
-	margin-top: 60px;
-	background-color: white;
-	display: inline-block;
-	width: 100%;
+.header-mid{
+	height: 50px;
 	text-align: center;
-	vertical-align: middle;
 	position: relative;
-	padding: 20px 0;
-
 }
-.header-contacts div span{
+.header-bot{
+	height: 200px;
+	background-size: 100%;
+	background-image: url('../src/header-background.png');
+	background-position-y: 20%;
+	border-top: 10px solid #e7e7e7;
+}
+.header-mid div{
 	display: inline-block;
-	width: 10%;	
-}
-.header-contacts div span:nth-child(1),
-.header-contacts div span:nth-child(2){
-	margin-right: 10%;
-}
-.header-contacts div span:nth-child(4),
-.header-contacts div span:nth-child(5){
-	margin-left: 10%;
-}
-.main-text{
-	background-color: pink;
-	width: 70%;
-	text-align: center;
-	margin-left: 15%;
-}
-.col-md-5{
-
-	
-}
-.education{
-	text-align: left;
-}
-.workexpirience{
-	text-align: right;
-}
-.footer{
-	color: white;
-	background-color: #77B9BF;
-}
-.header-photo{
 	position: absolute;
+	margin-top: 15px;
+
+}
+.header-mid div:nth-child(1){
+	left: 5%;
+}
+.header-mid div:nth-child(2){
+	left: 25%;
+}
+.header-mid div:nth-child(3){
+	border-radius: 100%;
 	height: 150px;
 	min-width: 150px;
-	border-radius: 100%;
-	left: 43%;
-	top: -320%;
-	background: url("../src/photo.jpg") 50% 50%;
-	background-size: 150%;
-	border: 4px solid blue;
+	left: 44%;
+	top: -125%;
+	border: 10px solid #e7e7e7;
+	background-color: white;
 }
+.header-mid div:nth-child(4){
+	right: 25%;
+}
+.header-mid div:nth-child(5){
+	right: 5%;
+}
+
+/*END HEADER*/
+
+
+
+
+
+
+
+/*COVLETTER*/
+
+.main-text{
+	width: 50%;
+	text-align: center;
+	margin-left: 25%;
+	margin-bottom: 100px;
+}
+
+/*END COVLETTER*/
+
+
+
+
+
+
+
+/*MIDDLE COLUMNS*/
+
+
+
+
+
+
+
+/*MIDDLE COLUMNS END*/
+
+
+
+
+
+
+
+
+
+
+
+
+/*FOOTER*/
+
+
+
+.footer{
+	color: white;
+	background-color: #1268b3;
+}
+
+
+
+/*FOOTER END*/
