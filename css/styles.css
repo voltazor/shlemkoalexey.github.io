@@ -10,6 +10,7 @@ text footer gray - #fdfdff
 
 body{
 	color: #606676;
+	font-family: 'Open Sans', sans-serif;
 }
 
 .container{
@@ -36,17 +37,22 @@ body{
 }
 .header-bot{
 	height: 200px;
-	background-size: 100%;
+	background-size: 100% ;
 	background-image: url('../src/header-background.png');
-	background-position-y: 20%;
+	background-position:0 -240px;
 	border-top: 10px solid #e7e7e7;
+	text-align: center;
 }
 .header-mid div{
 	display: inline-block;
 	position: absolute;
 	margin-top: 15px;
-
+	font-weight: 600;
 }
+.glyphicon{
+	margin-right: 5px;
+}
+
 .header-mid div:nth-child(1){
 	left: 5%;
 }
@@ -54,11 +60,12 @@ body{
 	left: 25%;
 }
 .header-mid div:nth-child(3){
+	position: relative;
 	border-radius: 100%;
 	height: 150px;
 	min-width: 150px;
-	left: 44%;
-	top: -125%;
+	
+	top: -140%;
 	border: 10px solid #e7e7e7;
 	background-color: white;
 }
@@ -69,6 +76,25 @@ body{
 	right: 5%;
 }
 
+.icon-for-header{
+	width: 25px;
+	height: 25px;
+	position: relative;
+	top: -2px;
+}
+
+
+.header-bot p{
+	color: white;
+}
+.header-bot p:nth-child(1){
+		margin-top: 40px;
+		font-weight: 600;
+		font-size: 30px;
+}
+.header-bot p:nth-child(2){
+		font-size: 20px;
+}
 /*END HEADER*/
 
 
@@ -83,7 +109,7 @@ body{
 	width: 50%;
 	text-align: center;
 	margin-left: 25%;
-	margin-bottom: 100px;
+	padding: 10px;
 }
 
 /*END COVLETTER*/
@@ -96,11 +122,15 @@ body{
 
 /*MIDDLE COLUMNS*/
 
+.education,
+.workexpirience{
+	padding: 30px;
+}
 
-
-
-
-
+.middle-image{
+	background-color: lightblue;
+	height: 200px;
+}
 
 /*MIDDLE COLUMNS END*/
 
@@ -122,6 +152,23 @@ body{
 .footer{
 	color: white;
 	background-color: #1268b3;
+	padding: 20px;
+	text-align: center;
+}
+.footer div{
+	padding: 10px;
+	border: 2px solid white;
+	display: inline-block;
+	font-weight: 700;
+	font-size: 30px;
+	width: 250px;
+	text-align: center;
+	margin: 20px;
+
+}
+.footer div img{
+	width: 75px;
+	height: 75px;
 }
 
 
