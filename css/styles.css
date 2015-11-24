@@ -8,227 +8,223 @@ text footer gray - #fdfdff
 text lightblue - #2da9f1
 */
 
-
-body{
-	color: #606676;
-	font-family: 'Open Sans', sans-serif;
+body {
+    color: #606676;
+    font-family: 'Open Sans', sans-serif;
 }
 
-.container{
-	padding: 0;
+.container {
+    padding: 0;
 }
-
-
 
 /*HEADER*/
 
-.header{
-	min-width: 900px;
-}
-.header-top{
-	height: 100px;
-	background-size: 100%;
-	background-image: url('../src/header-background.png');
-	border-bottom: 10px solid #e7e7e7;
-}
-.header-mid{
-	height: 50px;
-	text-align: center;
-	position: relative;
-}
-.header-bot{
-	height: 200px;
-	background-size: 100% ;
-	background-image: url('../src/header-background.png');
-	background-position:0 -240px;
-	border-top: 10px solid #e7e7e7;
-	text-align: center;
-}
-.header-mid div{
-	display: inline-block;
-	position: absolute;
-	margin-top: 15px;
-	font-weight: 600;
-}
-.glyphicon{
-	margin-right: 5px;
+.header {
+    min-width: 1200px;
 }
 
-.header-mid div:nth-child(1){
-	left: 5%;
-}
-.header-mid div:nth-child(2){
-	left: 25%;
-}
-.header-mid div:nth-child(3){
-	position: relative;
-	border-radius: 100%;
-	height: 150px;
-	min-width: 150px;
-	
-	top: -140%;
-	border: 10px solid #e7e7e7;
-	background-color: white;
-}
-.header-mid div:nth-child(4){
-	right: 25%;
-}
-.header-mid div:nth-child(5){
-	right: 5%;
+.header-top {
+    height: 100px;
+    background-size: 100%;
+    background-image: url('../src/header-background.png');
+    border-bottom: 10px solid #e7e7e7;
 }
 
-.icon-for-header{
-	width: 25px;
-	height: 25px;
-	position: relative;
-	top: -2px;
+.header-mid {
+    height: 50px;
+    text-align: center;
+    position: relative;
 }
 
+.header-bot {
+    height: 200px;
+    background-size: 100%;
+    background-image: url('../src/header-background.png');
+    background-position: 0 -240px;
+    border-top: 10px solid #e7e7e7;
+    text-align: center;
+}
 
-.header-bot p{
-	color: white;
+.header-mid div {
+    display: inline-block;
+    position: absolute;
+    margin-top: 15px;
+    font-weight: 600;
 }
-.header-bot p:nth-child(1){
-		margin-top: 40px;
-		font-weight: 600;
-		font-size: 30px;
+
+.glyphicon {
+    margin-right: 5px;
 }
-.header-bot p:nth-child(2){
-		font-size: 20px;
+
+.header-mid div:nth-child(1) {
+    left: 5%;
 }
+
+.header-mid div:nth-child(2) {
+    left: 25%;
+}
+
+.header-mid div:nth-child(3) {
+    position: relative;
+    border-radius: 100%;
+    height: 150px;
+    min-width: 150px;
+
+    top: -140%;
+    border: 10px solid #e7e7e7;
+    background-color: white;
+}
+
+.header-mid div:nth-child(4) {
+    right: 25%;
+}
+
+.header-mid div:nth-child(5) {
+    right: 5%;
+}
+
+.icon-for-header {
+    width: 25px;
+    height: 25px;
+    position: relative;
+    top: -2px;
+}
+
+.header-bot p {
+    color: white;
+}
+
+.header-bot p:nth-child(1) {
+    margin-top: 40px;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.header-bot p:nth-child(2) {
+    font-size: 20px;
+}
+
 /*END HEADER*/
-
-
-
-
-
-
 
 /*COVLETTER*/
 
-.main-text{
-	width: 50%;
-	text-align: center;
-	margin-left: 25%;
-	padding: 10px;
+.main-text {
+    width: 50%;
+    text-align: center;
+    margin-left: 25%;
+    padding: 10px;
 }
-.main-text b{
-	text-transform: uppercase;
-	color: #2da9f1;
+
+.main-text b {
+    text-transform: uppercase;
+    color: #2da9f1;
 }
 
 /*END COVLETTER*/
 
-
-
-
-
-
-
 /*MIDDLE COLUMNS*/
 
 .education,
-.workexpirience{
-	padding: 30px;
+.workexpirience {
+    padding: 30px;
 }
+
 .education b,
-.workexpirience b{
-	text-transform: uppercase;
-	color: #2da9f1;
+.workexpirience b {
+    text-transform: uppercase;
+    color: #2da9f1;
 }
 
-.middle-image{
-	height: 200px;
-	position: relative;
+.middle-image {
+    height: 200px;
+    position: relative;
 }
 
-.middle-image .glyphicon{
-	color: #2da9f1;
-	position: absolute;
-	top: 35px;
+.middle-image .glyphicon {
+    color: #2da9f1;
+    position: absolute;
+    top: 35px;
 }
-.glyphicon:nth-child(1){
-	left: 20px
+
+.glyphicon:nth-child(1) {
+    left: 20px
 }
-.glyphicon:nth-child(2){
-	right: 10px;
+
+.glyphicon:nth-child(2) {
+    right: 10px;
 }
+
 /*MIDDLE COLUMNS END*/
-
-
-
-
-
-
-
-
-
-
-
 
 /*FOOTER*/
 
-
-
-.footer{
-	color: white;
-	background-color: #1268b3;
-	padding: 20px;
-	text-align: center;
-	border-top-right-radius: 20px;
-	border-top-left-radius: 20px;
+.footer {
+    color: white;
+    background-color: #1268b3;
+    padding: 20px;
+    text-align: center;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
 
 }
-.footer div{
-	padding: 10px;
-	border: 1px solid #e7e7e7;
-	display: inline-block;
-	font-weight: 700;
-	font-size: 30px;
-	width: 300px;
-	text-align: center;
-	margin: 20px;
-	text-transform: uppercase;
-	position: relative;
+
+.footer div {
+    padding: 10px;
+    border: 1px solid #e7e7e7;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 30px;
+    width: 300px;
+    text-align: center;
+    margin: 20px;
+    text-transform: uppercase;
+    position: relative;
 
 }
-.footer div img{
-	width: 75px;
-	height: 75px;
-	left: 10px;
-	top: 10px;
-	margin-right: 10px;
+
+.footer div img {
+    width: 75px;
+    height: 75px;
+    left: 10px;
+    top: 10px;
+    margin-right: 10px;
 }
 
-.footer div div{
-	padding: 0;
-	margin: 0;
-	border: none;
-	background-color: #124877;
-	height: 10px;
-	width: 100%;
-	border-radius: 15px;
+.footer div div {
+    padding: 0;
+    margin: 0;
+    border: none;
+    background-color: #124877;
+    height: 10px;
+    width: 100%;
+    border-radius: 15px;
 }
-.footer div div:nth-child(3){
-	background-color: #3b9ff7;
-	position: absolute;
-	left: 10px;
-	bottom: 20px;
+
+.footer div div:nth-child(3) {
+    background-color: #3b9ff7;
+    position: absolute;
+    left: 10px;
+    bottom: 20px;
 }
-.footer div .html-width{
-	width: 230px;
+
+.footer div .html-width {
+    width: 230px;
 }
-.footer div .css-width{
-	width: 210px;
+
+.footer div .css-width {
+    width: 210px;
 }
-.footer div .js-width{
-	width: 100px;
+
+.footer div .js-width {
+    width: 100px;
 }
-.footer div .jquery-width{
-	width: 120px;
+
+.footer div .jquery-width {
+    width: 120px;
 }
-.footer div .bootstrap-width{
-	width: 220px;
+
+.footer div .bootstrap-width {
+    width: 220px;
 }
 
 /*FOOTER END*/
