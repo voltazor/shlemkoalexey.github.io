@@ -5,6 +5,7 @@ gray text in header - #606676
 footer blue - #1268b3
 text middle gray - #676975
 text footer gray - #fdfdff
+text lightblue - #2da9f1
 */
 
 
@@ -111,6 +112,10 @@ body{
 	margin-left: 25%;
 	padding: 10px;
 }
+.main-text b{
+	text-transform: uppercase;
+	color: #2da9f1;
+}
 
 /*END COVLETTER*/
 
@@ -126,12 +131,28 @@ body{
 .workexpirience{
 	padding: 30px;
 }
-
-.middle-image{
-	background-color: lightblue;
-	height: 200px;
+.education b,
+.workexpirience b{
+	text-transform: uppercase;
+	color: #2da9f1;
 }
 
+.middle-image{
+	height: 200px;
+	position: relative;
+}
+
+.middle-image .glyphicon{
+	color: #2da9f1;
+	position: absolute;
+	top: 35px;
+}
+.glyphicon:nth-child(1){
+	left: 20px
+}
+.glyphicon:nth-child(2){
+	right: 10px;
+}
 /*MIDDLE COLUMNS END*/
 
 
@@ -154,6 +175,8 @@ body{
 	background-color: #1268b3;
 	padding: 20px;
 	text-align: center;
+	border-top-right-radius: 20px;
+	border-top-left-radius: 20px;
 }
 .footer div{
 	padding: 10px;
@@ -161,14 +184,18 @@ body{
 	display: inline-block;
 	font-weight: 700;
 	font-size: 30px;
-	width: 250px;
+	width: 300px;
 	text-align: center;
 	margin: 20px;
+	text-transform: uppercase;
 
 }
 .footer div img{
 	width: 75px;
 	height: 75px;
+	left: 10px;
+	top: 10px;
+	margin-right: 10px;
 }
 
 
