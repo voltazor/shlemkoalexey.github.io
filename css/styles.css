@@ -177,10 +177,11 @@ body{
 	text-align: center;
 	border-top-right-radius: 20px;
 	border-top-left-radius: 20px;
+
 }
 .footer div{
 	padding: 10px;
-	border: 2px solid white;
+	border: 1px solid #e7e7e7;
 	display: inline-block;
 	font-weight: 700;
 	font-size: 30px;
@@ -188,6 +189,7 @@ body{
 	text-align: center;
 	margin: 20px;
 	text-transform: uppercase;
+	position: relative;
 
 }
 .footer div img{
@@ -198,6 +200,38 @@ body{
 	margin-right: 10px;
 }
 
-
+.footer div div{
+	padding: 0;
+	margin: 0;
+	border: none;
+	background-color: #124877;
+	height: 10px;
+	width: 100%;
+	border-radius: 15px;
+}
+.footer div div:nth-child(3){
+	background-color: #3b9ff7;
+	position: absolute;
+	left: 10px;
+	bottom: 20px;
+}
+.footer div .html-width{
+	width: 230px;
+}
+.footer div .css-width{
+	width: 210px;
+}
+.footer div .js-width{
+	width: 100px;
+}
+.footer div .jquery-width{
+	width: 120px;
+}
+.footer div .bootstrap-width{
+	width: 220px;
+}
 
 /*FOOTER END*/
+
+/*progress-bar-lightblue - #3b9ff7
+progress-bar-darkblue - #124877*/
