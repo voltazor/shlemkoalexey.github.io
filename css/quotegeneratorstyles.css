@@ -1,0 +1,28 @@
+body{
+  font-family: 'Caesar Dressing', cursive;
+
+  text-align: center;
+}
+h2{
+  color:#6f371c;
+}
+.qoute-block{
+  border: 1px solid #6f371c;
+  margin-top:5px;
+  width:100%;
+  height:250px;
+  background: url("http://kurspresent.ru/uploads/3/gods.jpg");
+
+  border-radius:5px;
+}
+blockquote{
+  margin-top:50px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius:5px;
+  border-left:none;
+  display:none;
+}
+blockquote footer{
+  color: white;  
+}

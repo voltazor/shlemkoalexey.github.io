@@ -156,6 +156,46 @@ body {
 
 /*MIDDLE COLUMNS END*/
 
+/*PORTFOLIO*/
+
+.portfolio-accordion-link{
+    background-color: #1268b3;
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+}
+
+.transition{
+    transition: 0.5s;
+}
+.portfolio-accordion-link:hover{
+    text-decoration: none;
+    background-color: #5994C9;
+}
+.portfolio-accordion-link:focus{
+    text-decoration: none;
+}
+.portfolio-panel-heading{
+    padding: 0;
+    background-color: #1268b3;
+    border-radius:20px;
+
+}
+.portfolio-panel-group{
+    margin-bottom: 0;
+}
+.portfolio-panel-group .panel{
+    border: none;
+    border-bottom: 1px solid white;
+    border-top: 10px solid #e7e7e7;
+}
+.portfolio-panel-title{
+    color: white;
+    text-align: center;
+}  
+
+/*END PORTFOLIO*/
+
 /*FOOTER*/
 
 .footer {
@@ -163,8 +203,7 @@ body {
     background-color: #1268b3;
     padding: 20px;
     text-align: center;
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
+
 
 }
 
@@ -224,7 +263,10 @@ body {
 }
 
 .footer div .bootstrap-width {
-    width: 220px;
+    width: 180px;
+}
+.footer div .photoshop-width {
+    width: 80px;
 }
 
 /*FOOTER END*/
