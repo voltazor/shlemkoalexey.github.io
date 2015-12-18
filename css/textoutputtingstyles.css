@@ -8,3 +8,19 @@ h2{
   text-align:center;
   text-transform: uppercase;
 }
+
+#output-form textarea{
+	border: 2px solid #00ff66;	
+	width: 100%;
+	height: 100px;
+	padding: 20px;
+	background: #000000;
+}
+.button-to-output{
+	background: #000000;
+	border: 2px solid #00ff66;
+	text-align: center;
+}
+.button-to-output:hover{
+	color: gray;
+};
