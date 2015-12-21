@@ -1,26 +1,30 @@
-body{
-  font-family: 'Press Start 2P', cursive;
-  color:#00ff66;
-  background: #000000;
-  padding:100px;
-}
-h2{
-  text-align:center;
-  text-transform: uppercase;
+body {
+    font-family: 'Press Start 2P', cursive;
+    color: #00ff66;
+    background: #000000;
+    padding: 100px;
 }
 
-#output-form textarea{
-	border: 2px solid #00ff66;	
-	width: 100%;
-	height: 100px;
-	padding: 20px;
-	background: #000000;
+h2 {
+    text-align: center;
+    text-transform: uppercase;
 }
-.button-to-output{
-	background: #000000;
-	border: 2px solid #00ff66;
-	text-align: center;
+
+#output-form textarea {
+    border: 2px solid #00ff66;
+    width: 100%;
+    height: 100px;
+    padding: 20px;
+    background: #000000;
 }
-.button-to-output:hover{
-	color: gray;
-};
+
+.button-to-output {
+    background: #000000;
+    border: 2px solid #00ff66;
+    text-align: center;
+}
+
+.button-to-output:hover {
+    color: gray;
+}
+
