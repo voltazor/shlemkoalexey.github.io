@@ -1,0 +1,296 @@
+body{
+	font-family: "Segoe UI";	
+}
+/*HEADER*/
+.header{
+	height: 850px;
+	background-color: #23232e;
+	width: 100%;
+}
+.header-content{
+	text-align: center;
+	padding-top: 80px;
+}
+.header-article{
+	color: rgb( 255, 255, 255);
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 80px;
+	padding-top: 185px;
+}
+.header-text{
+	font-size: 18px;
+	color: rgb( 255, 255, 255 );
+	width: 415px;
+	height: 49px;
+	text-align: center;
+	margin: 0 auto;
+	line-height: 1.667;
+}
+.header-arrow{
+	padding-top: 190px;
+}
+/*END HEADER*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*SLIDE 1*/
+.slide-1{
+	height: 1265px;
+	background: url(../src/landing-portfolio-example-src/background.png);
+	text-align: center;
+}
+.slide-1-head-text{
+	font-size: 30px;
+	color: rgb( 70, 75, 79);
+	line-height: 1.4;
+	width: 851px;
+	text-align: center;
+	margin: 0 auto;
+}
+.slide-1-head-text:nth-child(1){
+	padding-top: 180px;
+}
+.slide-1-head-text:nth-child(2){
+	padding-top: 80px;
+}
+.slide-1-article{
+	color: rgb( 70, 75, 79);
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 80px;	
+	margin: 0 auto;
+	padding-top: 125px;
+}
+.slide-1-columns-container{
+	margin: 0 365px;
+	padding-top: 100px;
+}
+.slide-1-columns div:nth-child(1){
+	text-transform: uppercase;
+	font-size: 18px;
+	color: rgb( 70, 75, 79 );
+	font-weight: bold;
+	line-height: 2.333;
+	text-align: left;
+}
+.slide-1-columns div:nth-child(2){
+	font-size: 18px;
+	color: rgb( 136, 138, 139 );
+	line-height: 1.667;
+	text-align: left;
+}
+/*END SLIDE 1*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*SLIDE 2*/
+.slide-2{
+	height: 1355px;
+	background-color: #23232e;
+	width: 100%;
+	text-align: center;
+}
+.slide-2-article{
+	color: rgb( 255, 255, 255);
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 80px;
+	padding-top: 130px;
+	text-align: center;
+}
+.slide-2-navbar-link{
+	display: inline-block;
+	font-size: 14px;
+	text-align: center;
+	margin-top: 30px;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+.slide-2-navbar-link a{
+	color: rgb( 255, 255, 255 );	
+}
+.slide-2-navbar-link a:hover{
+	color: #7470bd;	
+}
+.slide-2-column-container{
+	margin: 0 365px;
+	margin-top: 60px;	
+
+}
+
+.slide-2-picture{
+	background-color: #7b77c9;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 50%;
+	padding-bottom: 50%;
+}
+
+.slide-2-first-string,
+.slide-2-second-string{
+	display: block;
+	text-align: center;
+}
+
+
+.slide-2-first-string{
+	font-size: 21px;
+	color: rgb( 255, 255, 255 );
+	line-height: 1.714;
+
+}
+.slide-2-second-string{
+	font-size: 14px;
+	font-family: "Segoe UI";
+	color: rgb( 129, 139, 170 );
+	line-height: 2.571;
+}
+.slide-2-button{
+	border-radius: 5px;
+	color: #ffffff;
+	background: #7b77c9;
+	padding: 10px 20px 10px 20px;
+	text-decoration: none;
+	border: none;
+	width: 210px;
+	height: 60px;
+	margin-top:150px;
+}
+.slide-2-button:active{
+	background: #A29EE4;
+
+}
+.slide-2-button span{
+	font-size: 18px;
+	color: rgb( 255, 255, 255 );
+	line-height: 1.667;
+	text-align: center;
+}
+
+/*END SLIDE 2*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*SLIDE 3*/
+.slide-3{
+	height: 1400px;
+	background: url(../src/landing-portfolio-example-src/background.png);
+	text-align: center;
+}
+.slide-3-article{
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 80px;
+	padding-top: 110px;
+	text-align: center;
+	color: rgb( 70, 75, 79);
+}
+.slide-3-head-text{
+	font-size: 30px;
+	color: rgb( 70, 75, 79);
+	line-height: 1.4;
+	width: 851px;
+	text-align: center;
+	margin: 0 auto;	
+	padding-top: 110px;
+}
+
+.slide-3-picture{
+	background-color: #7b77c9;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 50%;
+	padding-bottom: 50%;
+}
+.slide-3-column-container{
+	margin: 0 365px;
+	margin-top: 60px;	
+
+}
+.slide-3-spacer{
+	height: 30px;
+}
+
+.slide-3-button{
+	border-radius: 5px;
+	color: #ffffff;
+	background: #7b77c9;
+	padding: 10px 20px 10px 20px;
+	text-decoration: none;
+	border: none;
+	width: 210px;
+	height: 60px;
+	margin-top:150px;
+}
+.slide-3-button:active{
+	background: #A29EE4;
+
+}
+.slide-3-button span{
+	font-size: 18px;
+	color: rgb( 255, 255, 255 );
+	line-height: 1.667;
+	text-align: center;
+}
+
+/*END SLIDE 3*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*SLIDE4*/
+.slide-4{
+	text-align: center;
+	height: 700px;
+	background-color: #23232e;
+}
+.slide-4 img{
+	padding-top: 200px;
+}
+
+.slide-4-text{
+	font-size: 18px;
+	color: rgb( 255, 255, 255 );
+	width: 450px;
+	height: 49px;
+	text-align: center;
+	margin: 0 auto;
+	line-height: 1.667;
+	padding-top: 50px;
+}
+.slide-4-input-text{
+	height: 60px;	
+	width: 420px;
+	border-radius: 5px;
+	padding: 10px 40px 10px 40px;
+}
+.slide-4-input-button{
+	border-radius: 5px;
+	color: #ffffff;
+	background: #7b77c9;
+	padding: 10px 20px 10px 20px;
+	text-decoration: none;
+	border: none;
+	width: 210px;
+	height: 60px;
+	margin-top:150px;
+	margin-left: 10px;
+}
+.slide-4-input-button:active{
+	background: #A29EE4;	
+}
+/*END SLIDE 4*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*FOOTER*/
+.footer{
+	height: 200px;
+	background: url(../src/landing-portfolio-example-src/background.png) -50% -50%; 
+	text-align: center;
+}
+.footer-text{
+	font-size: 30px;
+	color: rgb( 70, 75, 79);
+	line-height: 1.4;
+	width: 851px;
+	text-align: center;
+	margin: 0 auto;	
+}
+.footer-spacer{
+	margin-top: 60px;
+}
+
+.footer-links img{
+	margin: 20px 30px;
+}

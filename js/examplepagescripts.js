@@ -1,11 +1,21 @@
+var opacityDelay = 300;
+
 $(document).ready(function(){
   $(".example-list li:nth-child(1)").hover(function(){
-    $(".first-example-image").toggleClass("example-visible");
+    $(".first-example-text").toggleClass("example-visible");
+    $(".first-example-text").toggleClass("example-visible-opacity", opacityDelay);
   });  
   $(".example-list li:nth-child(2)").hover(function(){
-    $(".second-example-image").toggleClass("example-visible");
+    $(".second-example-text").toggleClass("example-visible");
+    $(".second-example-text").toggleClass("example-visible-opacity", opacityDelay);
   }); 
   $(".example-list li:nth-child(3)").hover(function(){
-    $(".third-example-image").toggleClass("example-visible");
+    $(".third-example-text").toggleClass("example-visible");
+    $(".third-example-text").toggleClass("example-visible-opacity", opacityDelay);
   }); 
+  $(".example-list li:nth-child(4)").hover(function(){
+    $(".fourth-example-text").toggleClass("example-visible");
+    $(".fourth-example-text").toggleClass("example-visible-opacity", opacityDelay);
+  }); 
+
 });

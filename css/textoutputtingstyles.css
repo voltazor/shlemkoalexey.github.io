@@ -18,13 +18,22 @@ h2 {
     background: #000000;
 }
 
-.button-to-output {
+.button-to-output{
     background: #000000;
     border: 2px solid #00ff66;
     text-align: center;
 }
 
-.button-to-output:hover {
-    color: gray;
+.button-to-output:hover,
+.button-back:hover{
+    color: orange;
+    border-color: orange;
+    cursor: pointer;
+    transition: 0.5s;
 }
 
+.button-back{
+    border: 2px solid #00ff66;
+    padding: 5px 10px;
+    display: inline-block;
+}
