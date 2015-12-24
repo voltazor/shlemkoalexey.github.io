@@ -1,0 +1,20 @@
+body{
+  font-size: 24px;
+  color:white;
+}
+.background{  
+  min-height:1080px;
+  width:100%;
+  padding:0;
+  background-size: cover;
+}
+.weather-block{
+  position:fixed;
+  display:inline-block;
+  background: rgba(0,0,0,0.7);
+  padding:10px;
+  border-bottom-right-radius: 20px;
+}
+#city{
+  margin-bottom:30px;
+}
