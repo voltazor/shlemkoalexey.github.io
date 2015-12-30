@@ -11,17 +11,27 @@
     <script src="../js/weather.js"></script>
 </head>
 <body>
-
-
   <div class="container-fluid background">
-    <div class="weather-block">
-      <div id="city"></div>
-      <div><span id="weather"></span></div>
-      <div>Temp: <span id="temperature"></span> <span id="degrees">°C</span></div>
-      <div>Pres: <span id="pressure"></span> hpa</div>
-      <div>Hum: <span id="humidity"></span> %</div>
-      <div>Wind: <span id="wind-speed"></span> m/s <span id="wind-dest"></span></div>
+    <div class="preloader">
+      <img src="https://raw.githubusercontent.com/ShlemkoAlexey/shlemkoalexey.github.io/master/src/weather-page/preloader.GIF">
     </div>
-  </div>
+    <div class="weather-block">
+      <div id="city" class="data"></div>
+      <div id="icon" class="data"></div>
+      <div class="data"><span id="weather"></span></div>
 
-</body>
+      <div class="data">Temp: <span id="temperature"></span> <span id="degrees">°C</span></div>
+      <div class="data">Pres: <span id="pressure"></span> mmHg</div>
+      <div class="data">Hum: <span id="humidity"></span> %</div>
+      <div class="data">Wind: <span id="wind-speed"></span> m/s <span id="wind-dest"></span></div>
+      <div class="row">
+        <div class="col-xs-6">
+          <button class="btn btn-block btn-info" id="temperature-c-switch">°C</button>
+        </div>
+        <div class="col-xs-6">
+          <button class="btn btn-block btn-info" id="temperature-f-switch">°F</button>       
+        </div>
+      </div>      
+    </div>
+
+  </div></body>

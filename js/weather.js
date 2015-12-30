@@ -2,22 +2,38 @@ $(document).ready(function(){
   var API = "27e5cd8c0ad6539ba11d8643aeece8d0";
   var locationRequestAdress = "http://ipinfo.io";
   var weatherRequestAdress = 'http://api.openweathermap.org/data/2.5/weather?q={';
-
   $.getJSON(locationRequestAdress, function(data){
     $("#city").append(data.city);
     $.getJSON(weatherRequestAdress+data.city+"}&appid="+API ,function(data){
-      setBackground(Math.round((data.main.temp-273)));
+      setBackground(temperatureFromKelvinToCelsium(data.main.temp));
       $("#weather").append(capitalizeFirstLetter((data.weather[0].description)));
-      $("#temperature").append(Math.round((data.main.temp-273)));
-      $("#pressure").append(" "+data.main.pressure);
+      $("#temperature").append(temperatureFromKelvinToCelsium(data.main.temp));
+      $("#pressure").append(" "+pressurefromHpaToMmHg(data.main.pressure));
       $("#humidity").append(data.main.humidity);
       $("#wind-speed").append(" " + data.wind.speed);
       $("#wind-dest").append(" "+ transformWindDestination(data.wind.deg));
+      $("#icon").append("<img src=http://openweathermap.org/img/w/"+data.weather[0].icon+".png>");
+      $(".preloader").css("display", "none");
     });
   });
+  
+  $("#temperature-c-switch").click(function(){
+  $.getJSON(locationRequestAdress, function(data){
+    $.getJSON(weatherRequestAdress+data.city+"}&appid="+API ,function(data){
+      $("#temperature").html(temperatureFromKelvinToCelsium(data.main.temp));
+      $("#degrees").html("°C");
+    });
+   });
+  });
+  $("#temperature-f-switch").click(function(){
+   $.getJSON(locationRequestAdress, function(data){
+    $.getJSON(weatherRequestAdress+data.city+"}&appid="+API ,function(data){
+      $("#temperature").html(temperatureFromKelvinToFahrenheit(data.main.temp));  
+      $("#degrees").html("°F");
+    });
+   });   
+  });
 });
-
-
 
 
 
@@ -43,13 +59,13 @@ function transformWindDestination(wind) {
   } else if (wind > 293 && wind <= 338) {
     return "NW";
   } else {
-    return "No wind";
+    return "Unknown";
   }
 }
 
 function setBackground(temp) {
-  if (temp < 0) {
-    $(".background").css("background-image", "url(http://technorepublica.com/wp-content/uploads/2015/12/snow-hd-wallpaper-download-snow-images-free.jpg)");
+  if (temp <= 0) {
+    $(".background").css("background-image", "url(http://www.goodwp.com/images/201105/goodwp.com_18147.jpg)");
   } else if (temp < 10) {
     $(".background").css("background-image", "url(http://www.hyperionherbs.com/wp-content/uploads/2014/11/Red-Autumn.jpg.jpg)");
   } else if (temp < 20) {
@@ -58,4 +74,15 @@ function setBackground(temp) {
     $(".background").css("background-image", "url(http://quotesideas.com/wp-content/uploads/2015/03/Summer-Wallpapers-2.jpg)");
   } else {};
 
-};
+}
+
+function pressurefromHpaToMmHg(pressure) {
+  return Math.round(pressure*0.75);
+}
+
+function temperatureFromKelvinToCelsium(temperature){
+  return Math.round(temperature-273);
+}
+function temperatureFromKelvinToFahrenheit(temperature){
+  return Math.round(1.8*(temperature -273) + 32);
+}
