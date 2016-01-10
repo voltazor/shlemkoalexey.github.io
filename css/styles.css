@@ -205,14 +205,17 @@ body {
     color: white;
     text-align: center;
 }
-.portfolio-hover-link{
+
+.portfolio-hover-link {
     border: none;
 }
-.portfolio-hover-link:hover{
-    box-shadow: 0 0 30px rgba(0,0,0,0.7);
+
+.portfolio-hover-link:hover {
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
     transition: 0.5s;
     border: none;
 }
+
 /*END PORTFOLIO*/
 
 /*FOOTER*/

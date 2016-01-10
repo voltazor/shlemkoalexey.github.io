@@ -17,5 +17,8 @@ $(document).ready(function(){
     $(".fourth-example-text").toggleClass("example-visible");
     $(".fourth-example-text").toggleClass("example-visible-opacity", opacityDelay);
   }); 
-
+  $(".example-list li:nth-child(5)").hover(function(){
+    $(".fifth-example-text").toggleClass("example-visible");
+    $(".fifth-example-text").toggleClass("example-visible-opacity", opacityDelay);
+  });
 });
