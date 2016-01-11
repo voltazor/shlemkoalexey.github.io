@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>To do list</title>
+    <link rel="shortcut icon" href="src/icon.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../css/todo.css" rel="stylesheet">
+
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="../js/todo.js"></script>
+
+</head>
+<body>
+    <div class="container-fluid to-do">
+        <h2>To-do list</h2>
+        <div class="row">
+            <div class="col-xs-9">
+                <input type="text" class="form-control" placeholder="Add new task" id="add-input">
+            </div>
+            <div class="col-xs-3">
+                <button class="btn btn-block btn-success" id="add-button">Add</button>
+            </div>
+        </div>
+
+
+        <ol class="to-do-list">
+            <li>Create todo-list</li>
+            <li>Nothing</li>
+        </ol>
+
+        <ol class="done-list">
+            <li>Sleep</li>
+        </ol>
+        <button class="btn btn-block btn-danger" id="remove-tasks-button">Delete all completed tasks</button>
+        <button class="btn btn-block btn-primary" onclick="location.href = 'examplepage.html'">Back</button>
+    </div>
+</body>

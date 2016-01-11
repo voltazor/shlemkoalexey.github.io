@@ -36,7 +36,8 @@ h2{
 .second-example-text,
 .third-example-text,
 .fourth-example-text,
-.fifth-example-text{
+.fifth-example-text,
+.sixth-example-text{
     display: none;
     opacity: 0.0;
 }

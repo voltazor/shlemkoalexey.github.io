@@ -1,0 +1,23 @@
+/*color-top rgba(255,246,203,255)
+color-bottom rgba(254,242,161,255)*/
+
+.to-do{
+  background: linear-gradient(to bottom, rgba(255,246,203,255), rgba(254,242,161,255));
+  width: 30%;
+  min-width: 400px;
+  border-radius: 20px;
+  padding-bottom: 15px;
+}
+.to-do-list{
+  border-bottom: 1px solid gray;
+}
+.done-list li{
+  text-decoration: line-through;
+}
+li:hover{
+  background: white;
+  cursor: pointer;
+}
+h2{
+  text-align: center;
+}

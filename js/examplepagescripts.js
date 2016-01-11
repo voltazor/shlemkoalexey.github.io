@@ -21,4 +21,8 @@ $(document).ready(function(){
     $(".fifth-example-text").toggleClass("example-visible");
     $(".fifth-example-text").toggleClass("example-visible-opacity", opacityDelay);
   });
+  $(".example-list li:nth-child(6)").hover(function(){
+    $(".sixth-example-text").toggleClass("example-visible");
+    $(".sixth-example-text").toggleClass("example-visible-opacity", opacityDelay);
+  });  
 });
