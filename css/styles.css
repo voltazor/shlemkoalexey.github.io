@@ -269,11 +269,11 @@ body {
 }
 
 .footer div .html-width {
-    width: 230px;
+    width: 200px;
 }
 
 .footer div .css-width {
-    width: 210px;
+    width: 180px;
 }
 
 .footer div .js-width {
@@ -281,7 +281,7 @@ body {
 }
 
 .footer div .jquery-width {
-    width: 120px;
+    width: 140px;
 }
 
 .footer div .bootstrap-width {
@@ -289,7 +289,7 @@ body {
 }
 
 .footer div .photoshop-width {
-    width: 80px;
+    width: 40px;
 }
 
 /*FOOTER END*/
