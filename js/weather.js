@@ -10,6 +10,7 @@ $(document).ready(function () {
         }else{
             $("#city").append("No city data");
             $("#lat").append(" " + Number(data.loc.split(",")[0]).toFixed(2));
+            $("#lat, #lon").css("display", "inline-block");
             $("#lon").append(" " + Number(data.loc.split(",")[1]).toFixed(2));
             weatherRequestAdress = 'http://api.openweathermap.org/data/2.5/weather?lat=' + data.loc.split(",")[0] + "&lon=" + data.loc.split(",")[1]+ "&appid="+API;
         }
@@ -30,20 +31,15 @@ $(document).ready(function () {
     });
 
     $("#temperature-c-switch").click(function () {
-        $.getJSON(locationRequestAdress, function (data) {
-            
-            $.getJSON(weatherRequestAdress, function (data) {
-                $("#temperature").html(temperatureFromKelvinToCelsium(data.main.temp));
-                $("#degrees").html("°C");
-            });
+        $.getJSON(weatherRequestAdress, function (data) {
+            $("#temperature").html(temperatureFromKelvinToCelsium(data.main.temp));
+            $("#degrees").html("°C");
         });
-    });
+     });
     $("#temperature-f-switch").click(function () {
-        $.getJSON(locationRequestAdress, function (data) {
-            $.getJSON(weatherRequestAdress, function (data) {
-                $("#temperature").html(temperatureFromKelvinToFahrenheit(data.main.temp));
-                $("#degrees").html("°F");
-            });
+        $.getJSON(weatherRequestAdress, function (data) {
+            $("#temperature").html(temperatureFromKelvinToFahrenheit(data.main.temp));
+            $("#degrees").html("°F");
         });
     });
 });
