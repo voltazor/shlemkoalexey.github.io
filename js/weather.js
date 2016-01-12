@@ -1,11 +1,23 @@
 $(document).ready(function () {
     var API = "27e5cd8c0ad6539ba11d8643aeece8d0";
     var locationRequestAdress = "http://ipinfo.io";
-    var weatherRequestAdress = 'http://api.openweathermap.org/data/2.5/weather?q={';
+    var weatherRequestAdress;
     $.getJSON(locationRequestAdress, function (data) {
-        $("#city").append(data.city);
-        $.getJSON(weatherRequestAdress + data.city + "}&appid=" + API, function (data) {
+         
+        if(data.city.length>0){
+            $("#city").append(data.city);
+            weatherRequestAdress = 'http://api.openweathermap.org/data/2.5/weather?q={' + data.city + "}&appid=" + API;
+        }else{
+            $("#city").append("No city data");
+            $("#lat").append(" " + Number(data.loc.split(",")[0]).toFixed(2));
+            $("#lon").append(" " + Number(data.loc.split(",")[1]).toFixed(2));
+            weatherRequestAdress = 'http://api.openweathermap.org/data/2.5/weather?lat=' + data.loc.split(",")[0] + "&lon=" + data.loc.split(",")[1]+ "&appid="+API;
+        }
+        
+
+        $.getJSON(weatherRequestAdress , function (data) {
             setBackground(temperatureFromKelvinToCelsium(data.main.temp));
+
             $("#weather").append(capitalizeFirstLetter((data.weather[0].description)));
             $("#temperature").append(temperatureFromKelvinToCelsium(data.main.temp));
             $("#pressure").append(" " + pressurefromHpaToMmHg(data.main.pressure));
@@ -19,7 +31,8 @@ $(document).ready(function () {
 
     $("#temperature-c-switch").click(function () {
         $.getJSON(locationRequestAdress, function (data) {
-            $.getJSON(weatherRequestAdress + data.city + "}&appid=" + API, function (data) {
+            
+            $.getJSON(weatherRequestAdress, function (data) {
                 $("#temperature").html(temperatureFromKelvinToCelsium(data.main.temp));
                 $("#degrees").html("°C");
             });
@@ -27,7 +40,7 @@ $(document).ready(function () {
     });
     $("#temperature-f-switch").click(function () {
         $.getJSON(locationRequestAdress, function (data) {
-            $.getJSON(weatherRequestAdress + data.city + "}&appid=" + API, function (data) {
+            $.getJSON(weatherRequestAdress, function (data) {
                 $("#temperature").html(temperatureFromKelvinToFahrenheit(data.main.temp));
                 $("#degrees").html("°F");
             });

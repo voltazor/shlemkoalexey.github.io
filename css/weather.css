@@ -30,15 +30,25 @@ body{
   text-align:center;
   margin-bottom:30px;
 }
+
 .data{
   margin-left:20px;
 }
+
+#lat,
+#lon{
+  margin-left:20px;
+  display: inline-block;
+  padding-bottom: 25px;
+}
+
+
 .preloader{
   position:fixed;
   display: block;
   background: rgba(0,0,0,1);
   min-width:250px;
-  min-height:370px;
+  min-height:450px;
   z-index:100;
   border-bottom-right-radius: 20px;
   text-align:center;
