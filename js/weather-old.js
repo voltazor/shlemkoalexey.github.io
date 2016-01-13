@@ -2,10 +2,9 @@ $(document).ready(function () {
     var API = "27e5cd8c0ad6539ba11d8643aeece8d0";
     var locationRequestAdress = "http://ipinfo.io";
     var weatherRequestAdress;
-    
-    $.getJSON(locationRequestAdress)
-    .done(function(data){
-         if(data.city.length>0){
+    $.getJSON(locationRequestAdress, function (data) {
+         
+        if(data.city.length>0){
             $("#city").append(data.city);
             weatherRequestAdress = 'http://api.openweathermap.org/data/2.5/weather?q={' + data.city + "}&appid=" + API;
         }else{
@@ -28,11 +27,7 @@ $(document).ready(function () {
             $("#wind-dest").append(" " + transformWindDestination(data.wind.deg));
             $("#icon").append("<img src=http://openweathermap.org/img/w/" + data.weather[0].icon + ".png>");
             $(".preloader").css("display", "none");
-        });       
-    })
-    .fail(function(){
-        $("#city").append("<span>No location data</span><br><span>please try later</span>");
-        $(".preloader").css("display", "none");
+        });
     });
 
     $("#temperature-c-switch").click(function () {
@@ -41,7 +36,6 @@ $(document).ready(function () {
             $("#degrees").html("°C");
         });
      });
-    
     $("#temperature-f-switch").click(function () {
         $.getJSON(weatherRequestAdress, function (data) {
             $("#temperature").html(temperatureFromKelvinToFahrenheit(data.main.temp));
@@ -49,8 +43,6 @@ $(document).ready(function () {
         });
     });
 });
-       
-
 
 
 function capitalizeFirstLetter(string) {
