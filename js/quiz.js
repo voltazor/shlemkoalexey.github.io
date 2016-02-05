@@ -1,6 +1,9 @@
 var questionCounter = 0;
 var correctCounter = 0;
-
+var questionText ="<h2>question text please ignore</h2>";
+var question1object;
+var question2object;
+var objectKeyForQuestion;
 var solarSystemArray = [
     {
         name: "Меркурий",
@@ -84,7 +87,14 @@ var solarSystemArray = [
         surfaceTemperature: 50 //K
     }
 ];
-
+var solarSystemQuestions = [
+    "", //distanceFromSun
+    "", //radius
+    "", //dayLength
+    "", //yearLength
+    "", //firstSpaceSpeed
+    ""  //surfaceTemperature
+];
 
 
 
@@ -106,8 +116,36 @@ function correctCounterUpdate(){
     $("#correct-counter").html(questionCounter);
 }
 
+function randomInteger(min, max) {
+    var rand = min - 0.5 + Math.random() * (max - min + 1);
+    rand = Math.round(rand);
+    return rand;
+}
+
+function setObjectsForQuestion(questionArray){
+    var array = questionArray.concat();
+    var counter = randomInteger(0, array.length - 1);
+    question1object = array[counter];
+    array.splice(counter,1);
+    counter = randomInteger(0, array.length - 1);  
+    question2object = array[counter];
+    var keysArray = Object.keys(question1object);
+    objectKeyForQuestion = keysArray[randomInteger(1, keysArray.length-1)];
+}
+
+function createQuestionInterface(){
+    $("#question-text").html(questionText);
+    $("#choose-1").html(question1object.name);
+    $("#choose-2").html(question2object.name);
+}
+
+
+
+
+
 
 $(document).ready(function(){
     $("#theme-selector").prop('value', false);
-    alert(solarSystemArray[5].firstSpaceSpeed);
+    setObjectsForQuestion(solarSystemArray);
+    createQuestionInterface();
 });
