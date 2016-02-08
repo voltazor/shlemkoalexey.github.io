@@ -4,6 +4,7 @@ var questionText ="<h2>question text please ignore</h2>";
 var question1object;
 var question2object;
 var objectKeyForQuestion;
+
 var solarSystemArray = [
     {
         name: "Меркурий",
@@ -88,12 +89,12 @@ var solarSystemArray = [
     }
 ];
 var solarSystemQuestions = [
-    "", //distanceFromSun
-    "", //radius
-    "", //dayLength
-    "", //yearLength
-    "", //firstSpaceSpeed
-    ""  //surfaceTemperature
+    "Какая из этих планет расположена дальше от солнца?", //distanceFromSun
+    "Какая из этих планет обладает большим радиусом?", //radius
+    "На какой из этих планет день длиннее (планета медленней совершает оборот вокруг своей оси)?", //dayLength
+    "На какой из этих планет год длится дольше(планета медленнее совершает оборот вокруг солнца)?", //yearLength
+    "На какой из этих планет первая космическая скорость (необходимая для выхода на орбиту) больше?", //firstSpaceSpeed
+    "Какая из этих планет имеет большую температуру на поверхности?"  //surfaceTemperature
 ];
 
 
@@ -113,7 +114,7 @@ function questionCounterUpdate(){
 
 function correctCounterUpdate(){
     correctCounter++;
-    $("#correct-counter").html(questionCounter);
+    $("#correct-counter").html(correctCounter);
 }
 
 function randomInteger(min, max) {
@@ -130,7 +131,8 @@ function setObjectsForQuestion(questionArray){
     counter = randomInteger(0, array.length - 1);  
     question2object = array[counter];
     var keysArray = Object.keys(question1object);
-    objectKeyForQuestion = keysArray[randomInteger(1, keysArray.length-1)];
+    objectKeyForQuestion = keysArray[randomInteger(1, keysArray.length-1)];   
+    questionCounterUpdate(); 
 }
 
 function createQuestionInterface(){
@@ -139,13 +141,60 @@ function createQuestionInterface(){
     $("#choose-2").html(question2object.name);
 }
 
+function clearQuestionInterface(){
+    $("#question-text").empty();
+    $("#choose-1").empty();
+    $("#choose-2").empty();  
+}
 
+function setQuestionText(questionValue){
+    if(questionValue === "distanceFromSun"){
+        questionText = solarSystemQuestions[0];
+    }else if (questionValue === "radius") {
+        questionText = solarSystemQuestions[1];
+    }else if (questionValue === "dayLength") {
+        questionText = solarSystemQuestions[2];
+    }else if (questionValue === "yearLength"){
+        questionText = solarSystemQuestions[3];
+    }else if (questionValue === "firstSpaceSpeed") {
+        questionText = solarSystemQuestions[4];
+    }else if (questionValue === "surfaceTemperature"){
+        questionText = solarSystemQuestions[5];
+    }
+}
 
-
+function bindEvents(objectKeyForQuestion){
+    if (question1object[objectKeyForQuestion] > question2object[objectKeyForQuestion]) {
+        $("#choose-1").click(function(){
+            $("#question-text").html("Правильный ответ");
+            correctCounterUpdate();
+            $('#choose-1, #choose-2').unbind();
+        });
+        $("#choose-2").click(function(){
+            $("#question-text").html("Неправильный ответ");
+            $('#choose-1, #choose-2').unbind();
+        });
+    }else{
+        $("#choose-1").click(function(){
+            $("#question-text").html("Неправильный ответ");
+            $('#choose-1, #choose-2').unbind();
+        });
+        $("#choose-2").click(function(){
+            $("#question-text").html("Правильный ответ"); 
+            correctCounterUpdate();
+            $('#choose-1, #choose-2').unbind();
+        });
+    }
+}
 
 
 $(document).ready(function(){
     $("#theme-selector").prop('value', false);
-    setObjectsForQuestion(solarSystemArray);
-    createQuestionInterface();
+    $("#generate-question").click(function(){
+        setObjectsForQuestion(solarSystemArray);
+        setQuestionText(objectKeyForQuestion);
+        createQuestionInterface();
+        bindEvents(objectKeyForQuestion);        
+    });
+
 });

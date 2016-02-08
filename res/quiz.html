@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="../css/quiz.css">
     <meta charset="UTF-8">
+    <link href='https://fonts.googleapis.com/css?family=Russo+One&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 <!-- <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -24,31 +25,41 @@
         <div class="row">
             <div class="col-xs-6">
                 <select class="form-control" id="theme-selector">
-                    <option>Солнечная система</option>
-                    <option>Тема 2</option>
-                    <option>Тема 3</option>
+                    <option>Placeholder</option>
+                    <option>Placeholder</option>
+                    <option>Placeholder</option>
                 </select>
             </div>
             <div class="col-xs-6">
-                <button class="btn btn-block btn-primary">Вопрос</button>
+                <button class="btn btn-block btn-primary" id="generate-question">Вопрос</button>
             </div>
         </div>
     </div>
     <div class="well">
         <div class="row">
             <div class="col-xs-6">
-                <span>Вопрос №</span>
+                <span>Вопрос № </span>
                 <span id="question-counter"></span>
             </div>
             <div class="col-xs-6">
-                <span>Верных ответов:</span>
+                <span>Верных ответов: </span>
                 <span id="correct-counter"></span>
             </div>
         </div>
     </div>
     <div class="well">
         <div id="question-text">
-            Normally, both your asses would be dead as fucking fried chicken, but you happen to pull this shit while I'm in a transitional period so I don't wanna kill you, I wanna help you. But I can't give you this case, it don't belong to me. Besides, I've already been through too much shit this morning over this case to hand it over to your dumb ass.
+            <!-- start slipsum code -->
+
+                Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing.
+
+            <!-- please do not remove this line -->
+
+            <div style="display:none;">
+            <a href="http://slipsum.com">lorem ipsum</a></div>
+
+            <!-- end slipsum code -->
+
         </div>
         <div class="row">
             <div class="col-xs-6">
