@@ -273,10 +273,18 @@ var countriesQuestions = {
         GDP: "Какая из этих стран обладает большим ВВП?",          
         HDI: "Какая из этих стран имеет больший индекс человеческого развития (показатель уровня жизни, грамотности, образованности и долголетия населения)?"           
 };
-
-
-
-
+/*
+var metalsArray = [
+    {
+        name: "Алюминий",
+        density: 2.7,  //г/см^3
+        meltingPoint: 660, //K
+        brinellsHardness: 25,
+        heatCapacity: 218.0
+    }
+];
+*/
+//http://www.mexel.narod.ru/Metall.html
 
 
 
