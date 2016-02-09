@@ -1,6 +1,6 @@
 var questionCounter = 0;
 var correctCounter = 0;
-var questionText ="<h2>question text please ignore</h2>";
+var questionText;
 var question1object;
 var question2object;
 var objectKeyForQuestion;
@@ -88,17 +88,191 @@ var solarSystemArray = [
         surfaceTemperature: 50 //K
     }
 ];
-var solarSystemQuestions = [
-    "Какая из этих планет расположена дальше от солнца?", //distanceFromSun
-    "Какая из этих планет обладает большим радиусом?", //radius
-    "На какой из этих планет день длиннее (планета медленней совершает оборот вокруг своей оси)?", //dayLength
-    "На какой из этих планет год длится дольше(планета медленнее совершает оборот вокруг солнца)?", //yearLength
-    "На какой из этих планет первая космическая скорость (необходимая для выхода на орбиту) больше?", //firstSpaceSpeed
-    "Какая из этих планет имеет большую температуру на поверхности?"  //surfaceTemperature
+var solarSystemQuestions = {
+    distanceFromSun: "Какая из этих планет расположена дальше от солнца?", 
+    radius: "Какая из этих планет обладает большим радиусом?", 
+    dayLength: "На какой из этих планет день длиннее (планета медленней совершает оборот вокруг своей оси)?", 
+    yearLength: "На какой из этих планет год длится дольше(планета медленнее совершает оборот вокруг солнца)?", 
+    firstSpaceSpeed: "На какой из этих планет первая космическая скорость (необходимая для выхода на орбиту) больше?", 
+    surfaceTemperature: "Какая из этих планет имеет большую температуру на поверхности?"  
+};
+
+var countriesArray =[
+    {
+        name: "Украина",
+        landArea: 603549,    //км^2
+        population: 42.6,   //mil
+        GDP: 371,          //bil $
+        HDI: 0.734           //0-1, индекс человеческого развития
+    },
+    {
+        name: "Канада",
+        landArea: 9984670,    //км^2
+        population: 35.6,   //mil
+        GDP: 1518,          //bil $
+        HDI: 0.902           //0-1, индекс человеческого развития        
+    },
+    {
+        name: "Лихтенштейн",
+        landArea : 160,    //км^2
+        population: 0.0368,   //mil
+        GDP: 3.545,          //bil $
+        HDI: 0.889           //0-1, индекс человеческого развития        
+    },
+    {
+        name: "Израиль",
+        landArea: 20770,    //км^2
+        population: 8.38,   //mil
+        GDP: 305.7,          //bil $
+        HDI: 0.888           //0-1, индекс человеческого развития        
+    },
+    {
+        name: "США",
+        landArea : 9519431,    //км^2
+        population: 325.6,   //mil
+        GDP: 16724,          //bil $
+        HDI: 0.914           //0-1, индекс человеческого развития        
+    },
+    {
+        name: "Габон",
+        landArea : 267667,    //км^2
+        population: 1.608,   //mil
+        GDP: 22.16,          //bil $
+        HDI: 0.683           //0-1, индекс человеческого развития        
+    },
+    {
+        name: "Германия",
+        landArea: 357021,    //км^2
+        population: 80.7,   //mil
+        GDP: 3413,          //bil $
+        HDI: 0.911           //0-1, индекс человеческого развития        
+    },
+    {
+        name: "Гватемала",
+        landArea : 108889,    //км^2
+        population: 14.37,   //mil
+        GDP: 62.78,          //bil $
+        HDI: 0.581           //0-1, индекс человеческого развития        
+    },
+    {
+        name: "Гондурас",
+        landArea : 112090,    //км^2
+        population: 8.448,   //mil
+        GDP: 19.2,          //bil $
+        HDI:  0.632          //0-1, индекс человеческого развития        
+    },
+    {
+        name: "Грузия",
+        landArea: 69700 ,    //км^2
+        population: 3.729,   //mil
+        GDP: 16.535,          //bil $
+        HDI: 0.745           //0-1, индекс человеческого развития        
+    },
+    {
+        name: "Исландия",
+        landArea : 103125,    //км^2
+        population: 0.321,   //mil
+        GDP: 12.4,          //bil $
+        HDI: 0.895           //0-1, индекс человеческого развития        
+    },
+    {
+        name: "Китай",
+        landArea : 9596960,    //км^2
+        population: 1368.660,   //mil
+        GDP: 12383,          //bil $
+        HDI: 0.719           //0-1, индекс человеческого развития        
+    },
+    {
+        name: "Латвия",
+        landArea : 64589,    //км^2
+        population: 1.973,   //mil
+        GDP: 32.320,          //bil $
+        HDI: 0.819           //0-1, индекс человеческого развития        
+    },
+    {
+        name: "Либерия",
+        landArea : 111369,    //км^2
+        population: 4.294,   //mil
+        GDP: 1.6,          //bil $
+        HDI:  0.388          //0-1, индекс человеческого развития        
+    },
+    {
+        name: "Новая Зеландия",
+        landArea : 268680,    //км^2
+        population: 4.596,   //mil
+        GDP: 150.6,          //bil $
+        HDI: 0.910           //0-1, индекс человеческого развития        
+    },
+    {
+        name: "Норвегия",
+        landArea : 385186,    //км^2
+        population: 5.063,   //mil
+        GDP: 335.3,          //bil $
+        HDI: 0.944           //0-1, индекс человеческого развития        
+    },
+    {
+        name: "Польша",
+        landArea : 312679,    //км^2
+        population: 38.483,   //mil
+        GDP: 481.235,          //bil $
+        HDI: 0.821           //0-1, индекс человеческого развития        
+    },
+    {
+        name: "Турция",
+        landArea : 783562,    //км^2
+        population: 77.695,   //mil
+        GDP: 806,          //bil $
+        HDI: 0.722           //0-1, индекс человеческого развития        
+    },
+    {
+        name: "Франция",
+        landArea : 674685,    //км^2
+        population: 66.2,   //mil
+        GDP: 2739,          //bil $
+        HDI: 0.884           //0-1, индекс человеческого развития        
+    },
+    {
+        name: "Эстония",
+        landArea : 45227,    //км^2
+        population: 1.311,   //mil
+        GDP: 25.255,          //bil $
+        HDI: 0.846           //0-1, индекс человеческого развития        
+    },
+    {
+        name: "Япония",
+        landArea : 37944,    //км^2
+        population: 126.958,   //mil
+        GDP: 5390,          //bil $
+        HDI: 0.890           //0-1, индекс человеческого развития        
+    },
+    {
+        name: "Великобритания",
+        landArea : 243809,    //км^2
+        population: 63.395,   //mil
+        GDP: 2247,          //bil $
+        HDI: 0.892           //0-1, индекс человеческого развития        
+    },
+    {
+        name: "Нидерланды",
+        landArea : 41526,    //км^2
+        population: 16.805,   //mil
+        GDP: 862.9,          //bil $
+        HDI: 0.921           //0-1, индекс человеческого развития        
+    },
+    {
+        name: "Нигер",
+        landArea : 1267000,    //км^2
+        population: 23.47,   //mil
+        GDP: 18.55,          //bil $
+        HDI:  0.304          //0-1, индекс человеческого развития        
+    }
 ];
-
-
-
+var countriesQuestions = {
+        landArea: "Какая из этих стран обладает большей площадью территории?",    
+        population: "В какой из этих стран население больше?",   
+        GDP: "Какая из этих стран обладает большим ВВП?",          
+        HDI: "Какая из этих стран имеет больший индекс человеческого развития (показатель уровня жизни, грамотности, образованности и долголетия населения)?"           
+};
 
 
 
@@ -141,26 +315,9 @@ function createQuestionInterface(){
     $("#choose-2").html(question2object.name);
 }
 
-function clearQuestionInterface(){
-    $("#question-text").empty();
-    $("#choose-1").empty();
-    $("#choose-2").empty();  
-}
 
-function setQuestionText(questionValue){
-    if(questionValue === "distanceFromSun"){
-        questionText = solarSystemQuestions[0];
-    }else if (questionValue === "radius") {
-        questionText = solarSystemQuestions[1];
-    }else if (questionValue === "dayLength") {
-        questionText = solarSystemQuestions[2];
-    }else if (questionValue === "yearLength"){
-        questionText = solarSystemQuestions[3];
-    }else if (questionValue === "firstSpaceSpeed") {
-        questionText = solarSystemQuestions[4];
-    }else if (questionValue === "surfaceTemperature"){
-        questionText = solarSystemQuestions[5];
-    }
+function setQuestionText(questionValue, object){
+        questionText = object[questionValue];
 }
 
 function bindEvents(objectKeyForQuestion){
@@ -191,10 +348,19 @@ function bindEvents(objectKeyForQuestion){
 $(document).ready(function(){
     $("#theme-selector").prop('value', false);
     $("#generate-question").click(function(){
-        setObjectsForQuestion(solarSystemArray);
-        setQuestionText(objectKeyForQuestion);
-        createQuestionInterface();
-        bindEvents(objectKeyForQuestion);        
+        if ($("#theme-selector").val()==="Планеты") {
+            setObjectsForQuestion(solarSystemArray);
+            setQuestionText(objectKeyForQuestion, solarSystemQuestions);
+            createQuestionInterface();
+            bindEvents(objectKeyForQuestion);     
+        }else if ($("#theme-selector").val()==="Государства") {
+            setObjectsForQuestion(countriesArray);
+            setQuestionText(objectKeyForQuestion, countriesQuestions);
+            createQuestionInterface();
+            bindEvents(objectKeyForQuestion);     
+        };
+
+
     });
 
 });
