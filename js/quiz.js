@@ -4,6 +4,7 @@ var questionText;
 var question1object;
 var question2object;
 var objectKeyForQuestion;
+var answerText;
 
 var solarSystemArray = [
     {
@@ -331,24 +332,52 @@ function setQuestionText(questionValue, object){
 function bindEvents(objectKeyForQuestion){
     if (question1object[objectKeyForQuestion] > question2object[objectKeyForQuestion]) {
         $("#choose-1").click(function(){
-            $("#question-text").html("Правильный ответ");
+            $("#question-text").html("<p>Правильный ответ</p>");
+            $("#question-text").append(answerText);
             correctCounterUpdate();
             $('#choose-1, #choose-2').unbind();
         });
         $("#choose-2").click(function(){
-            $("#question-text").html("Неправильный ответ");
+            $("#question-text").html("<p>Неправильный ответ</p>");
+            $("#question-text").append(answerText);
             $('#choose-1, #choose-2').unbind();
         });
     }else{
         $("#choose-1").click(function(){
-            $("#question-text").html("Неправильный ответ");
+            $("#question-text").html("<p>Неправильный ответ</p>");
+            $("#question-text").append(answerText);
             $('#choose-1, #choose-2').unbind();
         });
         $("#choose-2").click(function(){
-            $("#question-text").html("Правильный ответ"); 
+            $("#question-text").html("<p>Правильный ответ</p>"); 
+            $("#question-text").append(answerText);
             correctCounterUpdate();
             $('#choose-1, #choose-2').unbind();
         });
+    }
+}
+
+function setAnswerText(question){
+    if (question === solarSystemQuestions.distanceFromSun) {
+        answerText = question1object.name + " располагается от солнца на расстоянии " + question1object.distanceFromSun+" а.е., а "+question2object.name+" - на "+question2object.distanceFromSun+ " а.е."
+    }else if (question === solarSystemQuestions.radius){
+        answerText = question1object.name + " имеет радиус " + question1object.radius+" км, а "+question2object.name+" - "+question2object.radius+ " км."
+    }else if (question === solarSystemQuestions.dayLength){
+        answerText = question1object.name + " совершает оборот вокруг своей оси за " + question1object.dayLength+" дн., а "+question2object.name+" - за "+question2object.dayLength+ " дн."
+    }else if (question === solarSystemQuestions.yearLength){
+        answerText = question1object.name + " совершает оборот вокруг солнца за " + question1object.yearLength+" дн., а "+question2object.name+" - на "+question2object.yearLength+ " дн."
+    }else if (question === solarSystemQuestions.firstSpaceSpeed){
+        answerText = question1object.name + " имеет первую космическую скорость " + question1object.firstSpaceSpeed+" км/с, а "+question2object.name+" - "+question2object.firstSpaceSpeed+ " км/с."
+    }else if (question === solarSystemQuestions.surfaceTemperature){
+        answerText = question1object.name + " имеет температуру поверхности " + question1object.surfaceTemperature+" К, а "+question2object.name+" -  "+question2object.surfaceTemperature+ " К."
+    }else if (question === countriesQuestions.landArea){
+        answerText = question1object.name + " имеет площадь "+question1object.landArea+" км<sup>2</sup>, а "+question2object.name+ " - "+question2object.landArea+" км<sup>2</sup>."
+    }else if (question === countriesQuestions.population){
+        answerText = question1object.name + " имеет население "+question1object.population+" млн. человек, а "+question2object.name+ " - "+question2object.population+" млн. человек."
+    }else if (question === countriesQuestions.GDP){
+        answerText = question1object.name + " имеет ВВП "+question1object.GDP+" млрд. долл., а "+question2object.name+ " - "+question2object.GDP+" млрд. долл."
+    }else if (question === countriesQuestions.HDI){
+        answerText = question1object.name + " имеет ИЧР "+question1object.HDI+" , а "+question2object.name+ " - "+question2object.HDI+"."
     }
 }
 
@@ -360,12 +389,16 @@ $(document).ready(function(){
             setObjectsForQuestion(solarSystemArray);
             setQuestionText(objectKeyForQuestion, solarSystemQuestions);
             createQuestionInterface();
-            bindEvents(objectKeyForQuestion);     
+            bindEvents(objectKeyForQuestion);
+            setAnswerText(questionText);
+            console.log(answerText);     
         }else if ($("#theme-selector").val()==="Государства") {
             setObjectsForQuestion(countriesArray);
             setQuestionText(objectKeyForQuestion, countriesQuestions);
             createQuestionInterface();
-            bindEvents(objectKeyForQuestion);     
+            bindEvents(objectKeyForQuestion); 
+            setAnswerText(questionText);
+            console.log(answerText);     
         };
 
 
