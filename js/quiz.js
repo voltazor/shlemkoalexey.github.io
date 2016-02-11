@@ -326,7 +326,7 @@ function createQuestionInterface(){
 
 
 function setQuestionText(questionValue, object){
-        questionText = object[questionValue];
+    questionText = object[questionValue];
 }
 
 function bindEvents(objectKeyForQuestion){
@@ -358,28 +358,44 @@ function bindEvents(objectKeyForQuestion){
 }
 
 function setAnswerText(question){
-    if (question === solarSystemQuestions.distanceFromSun) {
-        answerText = question1object.name + " располагается от солнца на расстоянии " + question1object.distanceFromSun+" а.е., а "+question2object.name+" - на "+question2object.distanceFromSun+ " а.е."
-    }else if (question === solarSystemQuestions.radius){
-        answerText = question1object.name + " имеет радиус " + question1object.radius+" км, а "+question2object.name+" - "+question2object.radius+ " км."
-    }else if (question === solarSystemQuestions.dayLength){
-        answerText = question1object.name + " совершает оборот вокруг своей оси за " + question1object.dayLength+" дн., а "+question2object.name+" - за "+question2object.dayLength+ " дн."
-    }else if (question === solarSystemQuestions.yearLength){
-        answerText = question1object.name + " совершает оборот вокруг солнца за " + question1object.yearLength+" дн., а "+question2object.name+" - на "+question2object.yearLength+ " дн."
-    }else if (question === solarSystemQuestions.firstSpaceSpeed){
-        answerText = question1object.name + " имеет первую космическую скорость " + question1object.firstSpaceSpeed+" км/с, а "+question2object.name+" - "+question2object.firstSpaceSpeed+ " км/с."
-    }else if (question === solarSystemQuestions.surfaceTemperature){
-        answerText = question1object.name + " имеет температуру поверхности " + question1object.surfaceTemperature+" К, а "+question2object.name+" -  "+question2object.surfaceTemperature+ " К."
-    }else if (question === countriesQuestions.landArea){
-        answerText = question1object.name + " имеет площадь "+question1object.landArea+" км<sup>2</sup>, а "+question2object.name+ " - "+question2object.landArea+" км<sup>2</sup>."
-    }else if (question === countriesQuestions.population){
-        answerText = question1object.name + " имеет население "+question1object.population+" млн. человек, а "+question2object.name+ " - "+question2object.population+" млн. человек."
-    }else if (question === countriesQuestions.GDP){
-        answerText = question1object.name + " имеет ВВП "+question1object.GDP+" млрд. долл., а "+question2object.name+ " - "+question2object.GDP+" млрд. долл."
-    }else if (question === countriesQuestions.HDI){
-        answerText = question1object.name + " имеет ИЧР "+question1object.HDI+" , а "+question2object.name+ " - "+question2object.HDI+"."
+    switch(question){
+        case solarSystemQuestions.distanceFromSun: 
+            answerText = question1object.name + " располагается от солнца на расстоянии " + question1object.distanceFromSun+" а.е., а "+question2object.name+" - на "+question2object.distanceFromSun+ " а.е.";
+            break;
+        case solarSystemQuestions.radius:
+            answerText = question1object.name + " имеет радиус " + question1object.radius+" км, а "+question2object.name+" - "+question2object.radius+ " км.";
+            break;
+        case solarSystemQuestions.dayLength:
+            answerText = question1object.name + " совершает оборот вокруг своей оси за " + question1object.dayLength+" дн., а "+question2object.name+" - за "+question2object.dayLength+ " дн.";
+            break;
+        case solarSystemQuestions.yearLength:
+            answerText = question1object.name + " совершает оборот вокруг солнца за " + question1object.yearLength+" дн., а "+question2object.name+" - на "+question2object.yearLength+ " дн.";
+            break;
+        case solarSystemQuestions.firstSpaceSpeed:
+            answerText = question1object.name + " имеет первую космическую скорость " + question1object.firstSpaceSpeed+" км/с, а "+question2object.name+" - "+question2object.firstSpaceSpeed+ " км/с.";
+            break;
+        case solarSystemQuestions.surfaceTemperature:
+            answerText = question1object.name + " имеет температуру поверхности " + question1object.surfaceTemperature+" К, а "+question2object.name+" -  "+question2object.surfaceTemperature+ " К.";
+            break;
+        case countriesQuestions.landArea:
+            answerText = question1object.name + " имеет площадь "+question1object.landArea+" км<sup>2</sup>, а "+question2object.name+ " - "+question2object.landArea+" км<sup>2</sup>.";
+            break;
+        case countriesQuestions.population:
+            answerText = question1object.name + " имеет население "+question1object.population+" млн. человек, а "+question2object.name+ " - "+question2object.population+" млн. человек.";
+            break;
+        case countriesQuestions.GDP:
+            answerText = question1object.name + " имеет ВВП "+question1object.GDP+" млрд. долл., а "+question2object.name+ " - "+question2object.GDP+" млрд. долл.";
+            break;
+        case countriesQuestions.HDI:
+            answerText = question1object.name + " имеет ИЧР "+question1object.HDI+" , а "+question2object.name+ " - "+question2object.HDI+".";
+            break;
+        default:
+            alert("Question generation error!");
     }
 }
+
+
+
 
 
 $(document).ready(function(){
