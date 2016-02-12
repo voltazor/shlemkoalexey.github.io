@@ -72,6 +72,7 @@ var var13 = "";
 
 function setVar1(){
     var1 = line1[randomInteger(0,3)];
+    console.log(var1);
 };
 function setVar2(var1){
     switch(var1){
@@ -94,6 +95,7 @@ function setVar2(var1){
             break;
         default: var2 = "";
     }
+        console.log(var2);
 }
 
 function setVar3(var2){
@@ -111,15 +113,14 @@ function setVar3(var2){
         case line2[5]:
             var3 = line3[2];
             break;
-        case line2[6]:
         case line2[7]:
-        case line2[8]:
             counter = randomInteger(3,4);
             var3 = line3[counter];
             break;
         default:
             var3 = "";
     }
+        console.log(var3);
 }
 
 function setVar4(var3){
@@ -129,9 +130,11 @@ function setVar4(var3){
         case line3[2]:
             counter = randomInteger(0,4);
             var4 = line4[counter];
+            break;
         default:
             var4 = "";
     }
+        console.log(var4);
 }
 
 
