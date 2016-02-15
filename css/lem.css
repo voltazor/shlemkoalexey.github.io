@@ -1,7 +1,11 @@
 body{
-	text-align: center;
+	text-align: left;
 }
 .algorythm-image{
 	width: 100%;
 	max-width: 683px;
+}
+#result p{
+	font-weight: bold;
+	border-bottom: 1px solid gray;
 }
