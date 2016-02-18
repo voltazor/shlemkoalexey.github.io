@@ -274,6 +274,186 @@ var countriesQuestions = {
         GDP: "Какая из этих стран обладает большим ВВП?",          
         HDI: "Какая из этих стран имеет больший индекс человеческого развития (показатель уровня жизни, грамотности, образованности и долголетия населения)?"           
 };
+
+var inventionsArray = [
+    {
+        name: "Телескоп",
+        inventionYear: 1608
+    },
+    {
+        name: "Барометр",
+        inventionYear: 1643
+    },
+    {
+        name: "Фортепиано",
+        inventionYear: 1709
+    },
+    {
+        name: "Секстант",
+        inventionYear: 1731
+    },
+    {
+        name: "Громоотвод",
+        inventionYear: 1752
+    },
+    {
+        name: "Секундомер",
+        inventionYear: 1776
+    },
+    {
+        name: "Парашют",
+        inventionYear: 1783
+    },
+    {
+        name: "Шрапнель",
+        inventionYear: 1784
+    },
+    {
+        name: "Вакцинация",
+        inventionYear: 1798
+    },
+    {
+        name: "Метроном",
+        inventionYear: 1812
+    },
+    {
+        name: "Стетоскоп",
+        inventionYear: 1816
+    },
+    {
+        name: "Электромотор",
+        inventionYear: 1821
+    },
+    {
+        name: "Фотография",
+        inventionYear: 1826
+    },
+    {
+        name: "Лампа накаливания",
+        inventionYear: 1835
+    },
+    {
+        name: "Азбука Морзе",
+        inventionYear: 1838
+    },
+    {
+        name: "Анестезия",
+        inventionYear: 1842
+    },
+    {
+        name: "Гироскоп",
+        inventionYear: 1852
+    },
+    {
+        name: "Пастеризация",
+        inventionYear: 1862
+    },
+    {
+        name: "Динамит",
+        inventionYear: 1866
+    },
+    {
+        name: "Героин",
+        inventionYear: 1874
+    },
+    {
+        name: "Телефон",
+        inventionYear: 1876
+    },
+    {
+        name: "Автомобиль",
+        inventionYear: 1879
+    },
+    {
+        name: "Бюстгальтер",
+        inventionYear: 1889
+    },
+    {
+        name: "Рентгеновское излучение",
+        inventionYear: 1895
+    },
+    {
+        name: "Самолет",
+        inventionYear: 1903
+    },
+    {
+        name: "Счетчик Гейгера",
+        inventionYear: 1913
+    },
+    {
+        name: "Полиграф",
+        inventionYear: 1921
+    },
+    {
+        name: "Пенициллин",
+        inventionYear: 1928
+    },
+    {
+        name: "Радиотелескоп",
+        inventionYear: 1931
+    },
+    {
+        name: "Радар",
+        inventionYear: 1935
+    },
+    {
+        name: "Компьютер",
+        inventionYear: 1938
+    },
+    {
+        name: "Ядерный реактор",
+        inventionYear: 1942
+    },
+    {
+        name: "Акваланг",
+        inventionYear: 1943
+    },
+    {
+        name: "Атомная бомба",
+        inventionYear: 1945
+    },
+    {
+        name: "Кредитная карточка",
+        inventionYear: 1950
+    },
+    {
+        name: "Лазер",
+        inventionYear: 1960
+    },
+    {
+        name: "Электронная почта",
+        inventionYear: 1965
+    },
+    {
+        name: "Караоке",
+        inventionYear: 1971
+    },
+    {
+        name: "Мобильный телефон",
+        inventionYear: 1973
+    },
+    {
+        name: "Компакт-диск",
+        inventionYear: 1980
+    },
+    {
+        name: "Интернет",
+        inventionYear: 1983
+    },
+    {
+        name: "Углеродные нанотрубки",
+        inventionYear: 1991
+    },
+    {
+        name: "DVD",
+        inventionYear: 1995
+    }
+];
+
+var inventionsQuestions = {
+    inventionYear : "Какое из этих изобретений появилось позже?"
+};
+
 /*
 var metalsArray = [
     {
@@ -389,6 +569,9 @@ function setAnswerText(question){
         case countriesQuestions.HDI:
             answerText = question1object.name + " имеет ИЧР "+question1object.HDI+" , а "+question2object.name+ " - "+question2object.HDI+".";
             break;
+        case inventionsQuestions.inventionYear:
+            answerText = question1object.name + " - изобретение "+question1object.inventionYear + " года, а "+question2object.name+" - "+question2object.inventionYear+" года."
+            break;
         default:
             alert("Question generation error!");
     }
@@ -415,6 +598,13 @@ $(document).ready(function(){
             bindEvents(objectKeyForQuestion); 
             setAnswerText(questionText);
             console.log(answerText);     
+        }else if ($("#theme-selector").val()==="Изобретения XVII - XX веков") {
+            setObjectsForQuestion(inventionsArray);
+            setQuestionText(objectKeyForQuestion, inventionsQuestions);
+            createQuestionInterface();
+            bindEvents(objectKeyForQuestion);
+            setAnswerText(questionText);
+            console.log(answerText);
         };
 
 
