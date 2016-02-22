@@ -82,15 +82,15 @@ var solarSystemArray = [
     }
 ];
 var solarSystemQuestions = {
-    distanceFromSun: "Какая из этих планет расположена дальше от солнца?", 
-    radius: "Какая из этих планет обладает большим радиусом?", 
-    dayLength: "На какой из этих планет день длиннее (планета медленней совершает оборот вокруг своей оси)?", 
-    yearLength: "На какой из этих планет год длится дольше(планета медленнее совершает оборот вокруг солнца)?", 
-    firstSpaceSpeed: "На какой из этих планет первая космическая скорость (необходимая для выхода на орбиту) больше?", 
-    surfaceTemperature: "Какая из этих планет имеет большую температуру на поверхности?"  
+    distanceFromSun: "Какая из этих планет расположена дальше от солнца?",
+    radius: "Какая из этих планет обладает большим радиусом?",
+    dayLength: "На какой из этих планет день длиннее (планета медленней совершает оборот вокруг своей оси)?",
+    yearLength: "На какой из этих планет год длится дольше(планета медленнее совершает оборот вокруг солнца)?",
+    firstSpaceSpeed: "На какой из этих планет первая космическая скорость (необходимая для выхода на орбиту) больше?",
+    surfaceTemperature: "Какая из этих планет имеет большую температуру на поверхности?"
 };
 
-var countriesArray =[
+var countriesArray = [
     {
         name: "Украина",
         landArea: 603549,    //км^2
@@ -107,7 +107,7 @@ var countriesArray =[
     },
     {
         name: "Лихтенштейн",
-        landArea : 160,    //км^2
+        landArea: 160,    //км^2
         population: 0.0368,   //mil
         GDP: 3.545,          //bil $
         HDI: 0.889           //0-1, индекс человеческого развития        
@@ -121,14 +121,14 @@ var countriesArray =[
     },
     {
         name: "США",
-        landArea : 9519431,    //км^2
+        landArea: 9519431,    //км^2
         population: 325.6,   //mil
         GDP: 16724,          //bil $
         HDI: 0.914           //0-1, индекс человеческого развития        
     },
     {
         name: "Габон",
-        landArea : 267667,    //км^2
+        landArea: 267667,    //км^2
         population: 1.608,   //mil
         GDP: 22.16,          //bil $
         HDI: 0.683           //0-1, индекс человеческого развития        
@@ -142,129 +142,129 @@ var countriesArray =[
     },
     {
         name: "Гватемала",
-        landArea : 108889,    //км^2
+        landArea: 108889,    //км^2
         population: 14.37,   //mil
         GDP: 62.78,          //bil $
         HDI: 0.581           //0-1, индекс человеческого развития        
     },
     {
         name: "Гондурас",
-        landArea : 112090,    //км^2
+        landArea: 112090,    //км^2
         population: 8.448,   //mil
         GDP: 19.2,          //bil $
-        HDI:  0.632          //0-1, индекс человеческого развития        
+        HDI: 0.632          //0-1, индекс человеческого развития
     },
     {
         name: "Грузия",
-        landArea: 69700 ,    //км^2
+        landArea: 69700,    //км^2
         population: 3.729,   //mil
         GDP: 16.535,          //bil $
         HDI: 0.745           //0-1, индекс человеческого развития        
     },
     {
         name: "Исландия",
-        landArea : 103125,    //км^2
+        landArea: 103125,    //км^2
         population: 0.321,   //mil
         GDP: 12.4,          //bil $
         HDI: 0.895           //0-1, индекс человеческого развития        
     },
     {
         name: "Китай",
-        landArea : 9596960,    //км^2
+        landArea: 9596960,    //км^2
         population: 1368.660,   //mil
         GDP: 12383,          //bil $
         HDI: 0.719           //0-1, индекс человеческого развития        
     },
     {
         name: "Латвия",
-        landArea : 64589,    //км^2
+        landArea: 64589,    //км^2
         population: 1.973,   //mil
         GDP: 32.320,          //bil $
         HDI: 0.819           //0-1, индекс человеческого развития        
     },
     {
         name: "Либерия",
-        landArea : 111369,    //км^2
+        landArea: 111369,    //км^2
         population: 4.294,   //mil
         GDP: 1.6,          //bil $
-        HDI:  0.388          //0-1, индекс человеческого развития        
+        HDI: 0.388          //0-1, индекс человеческого развития
     },
     {
         name: "Новая Зеландия",
-        landArea : 268680,    //км^2
+        landArea: 268680,    //км^2
         population: 4.596,   //mil
         GDP: 150.6,          //bil $
         HDI: 0.910           //0-1, индекс человеческого развития        
     },
     {
         name: "Норвегия",
-        landArea : 385186,    //км^2
+        landArea: 385186,    //км^2
         population: 5.063,   //mil
         GDP: 335.3,          //bil $
         HDI: 0.944           //0-1, индекс человеческого развития        
     },
     {
         name: "Польша",
-        landArea : 312679,    //км^2
+        landArea: 312679,    //км^2
         population: 38.483,   //mil
         GDP: 481.235,          //bil $
         HDI: 0.821           //0-1, индекс человеческого развития        
     },
     {
         name: "Турция",
-        landArea : 783562,    //км^2
+        landArea: 783562,    //км^2
         population: 77.695,   //mil
         GDP: 806,          //bil $
         HDI: 0.722           //0-1, индекс человеческого развития        
     },
     {
         name: "Франция",
-        landArea : 674685,    //км^2
+        landArea: 674685,    //км^2
         population: 66.2,   //mil
         GDP: 2739,          //bil $
         HDI: 0.884           //0-1, индекс человеческого развития        
     },
     {
         name: "Эстония",
-        landArea : 45227,    //км^2
+        landArea: 45227,    //км^2
         population: 1.311,   //mil
         GDP: 25.255,          //bil $
         HDI: 0.846           //0-1, индекс человеческого развития        
     },
     {
         name: "Япония",
-        landArea : 37944,    //км^2
+        landArea: 37944,    //км^2
         population: 126.958,   //mil
         GDP: 5390,          //bil $
         HDI: 0.890           //0-1, индекс человеческого развития        
     },
     {
         name: "Великобритания",
-        landArea : 243809,    //км^2
+        landArea: 243809,    //км^2
         population: 63.395,   //mil
         GDP: 2247,          //bil $
         HDI: 0.892           //0-1, индекс человеческого развития        
     },
     {
         name: "Нидерланды",
-        landArea : 41526,    //км^2
+        landArea: 41526,    //км^2
         population: 16.805,   //mil
         GDP: 862.9,          //bil $
         HDI: 0.921           //0-1, индекс человеческого развития        
     },
     {
         name: "Нигер",
-        landArea : 1267000,    //км^2
+        landArea: 1267000,    //км^2
         population: 23.47,   //mil
         GDP: 18.55,          //bil $
-        HDI:  0.304          //0-1, индекс человеческого развития        
+        HDI: 0.304          //0-1, индекс человеческого развития
     }
 ];
 var countriesQuestions = {
-        landArea: "Какая из этих стран обладает большей площадью территории?",    
-        population: "В какой из этих стран население больше?",   
-        GDP: "Какая из этих стран обладает большим ВВП?",          
-        HDI: "Какая из этих стран имеет больший индекс человеческого развития (показатель уровня жизни, грамотности, образованности и долголетия населения)?"           
+    landArea: "Какая из этих стран обладает большей площадью территории?",
+    population: "В какой из этих стран население больше?",
+    GDP: "Какая из этих стран обладает большим ВВП?",
+    HDI: "Какая из этих стран имеет больший индекс человеческого развития (показатель уровня жизни, грамотности, образованности и долголетия населения)?"
 };
 
 var inventionsArray = [
@@ -443,181 +443,174 @@ var inventionsArray = [
 ];
 
 var inventionsQuestions = {
-    inventionYear : "Какое из этих изобретений появилось позже?"
+    inventionYear: "Какое из этих изобретений появилось позже?"
 };
 
 var corporationsQuestion = [
     {
-        name = "IKEA",
-        foundation = 1943,       //г.
-        employees = 147,         //тыс.ч.
-        tradeTurnover = 29.29    //млрд. дол.
+        name: "IKEA",
+        foundation: 1943,       //г.
+        employees: 147,         //тыс.ч.
+        tradeTurnover: 29.29    //млрд. дол.
     },
     {
-        name = "Airbus",
-        foundation = 1970,              //г.
-        employees = 55,               //тыс.ч.
-        tradeTurnover = 39.4           //млрд. дол.        
+        name: "Airbus",
+        foundation: 1970,              //г.
+        employees: 55,               //тыс.ч.
+        tradeTurnover: 39.4           //млрд. дол.
     },
     {
-        name = "American Express",
-        foundation = 1850,              //г.
-        employees = 53.5,               //тыс.ч.
-        tradeTurnover = 33           //млрд. дол.        
+        name: "American Express",
+        foundation: 1850,              //г.
+        employees: 53.5,               //тыс.ч.
+        tradeTurnover: 33           //млрд. дол.
     },
     {
-        name = "Apple, Inc",
-        foundation = 1976,              //г.
-        employees = 80,               //тыс.ч.
-        tradeTurnover = 170.91           //млрд. дол.        
+        name: "Apple, Inc",
+        foundation: 1976,              //г.
+        employees: 80,               //тыс.ч.
+        tradeTurnover: 170.91           //млрд. дол.
     },
     {
-        name = "Audi ",
-        foundation = 1910,              //г.
-        employees = 53.347,               //тыс.ч.
-        tradeTurnover = 48.8           //млрд. дол.        
+        name: "Audi ",
+        foundation: 1910,              //г.
+        employees: 53.347,               //тыс.ч.
+        tradeTurnover: 48.8           //млрд. дол.
     },
     {
-        name = "Boeing",
-        foundation = 1916,              //г.
-        employees = 152,               //тыс.ч.
-        tradeTurnover =  54.8          //млрд. дол.        
+        name: "Boeing",
+        foundation: 1916,              //г.
+        employees: 152,               //тыс.ч.
+        tradeTurnover: 54.8          //млрд. дол.
     },
     {
-        name = "Carlsberg",
-        foundation = 1847,              //г.
-        employees = 40,               //тыс.ч.
-        tradeTurnover = 9.53           //млрд. дол.        
+        name: "Ford",
+        foundation: 1903,              //г.
+        employees: 164,               //тыс.ч.
+        tradeTurnover: 128.9          //млрд. дол.
     },
     {
-        name = "Ford",
-        foundation = 1903,              //г.
-        employees = 164,               //тыс.ч.
-        tradeTurnover =  128.9          //млрд. дол.        
+        name: "General Motors",
+        foundation: 1908,              //г.
+        employees: 216,               //тыс.ч.
+        tradeTurnover: 135.6         //млрд. дол.
     },
     {
-        name = "General Motors",
-        foundation = 1908,              //г.
-        employees = 216,               //тыс.ч.
-        tradeTurnover =   135.6         //млрд. дол.        
+        name: "Google Inc.",
+        foundation: 1998,              //г.
+        employees: 55.4,               //тыс.ч.
+        tradeTurnover: 66          //млрд. дол.
     },
     {
-        name = "Google Inc.",
-        foundation = 1998,              //г.
-        employees = 55.4,               //тыс.ч.
-        tradeTurnover = 66          //млрд. дол.        
+        name: "Heineken International",
+        foundation: 1864,              //г.
+        employees: 55.3,               //тыс.ч.
+        tradeTurnover: 14.7          //млрд. дол.
     },
     {
-        name = "Heineken International",
-        foundation = 1864,              //г.
-        employees = 55.3,               //тыс.ч.
-        tradeTurnover = 14.7          //млрд. дол.        
+        name: "IBM",
+        foundation: 1911,              //г.
+        employees: 355,               //тыс.ч.
+        tradeTurnover: 12.4          //млрд. дол.
     },
     {
-        name = "IBM",
-        foundation = 1911,              //г.
-        employees = 355,               //тыс.ч.
-        tradeTurnover = 12.4          //млрд. дол.        
+        name: "Intel",
+        foundation: 1968,              //г.
+        employees: 94.1,               //тыс.ч.
+        tradeTurnover: 38.3          //млрд. дол.
     },
     {
-        name = "Intel",
-        foundation = 1968,              //г.
-        employees = 94.1,               //тыс.ч.
-        tradeTurnover =  38.3          //млрд. дол.        
+        name: "Johnson & Johnson",
+        foundation: 1886,              //г.
+        employees: 118.7,               //тыс.ч.
+        tradeTurnover: 61.58           //млрд. дол.
     },
     {
-        name = "Johnson & Johnson",
-        foundation = 1886,              //г.
-        employees = 118.7,               //тыс.ч.
-        tradeTurnover = 61.58           //млрд. дол.        
+        name: "LG",
+        foundation: 1947,              //г.
+        employees: 186,               //тыс.ч.
+        tradeTurnover: 78.89           //млрд. дол.
     },
     {
-        name = "LG",
-        foundation = 1947,              //г.
-        employees = 186,               //тыс.ч.
-        tradeTurnover = 78.89           //млрд. дол.        
+        name: "Lockheed Martin",
+        foundation: 1912,              //г.
+        employees: 130,               //тыс.ч.
+        tradeTurnover: 39.6           //млрд. дол.
     },
     {
-        name = "Lockheed Martin",
-        foundation = 1912,              //г.
-        employees = 130,               //тыс.ч.
-        tradeTurnover = 39.6           //млрд. дол.        
+        name: "L’Oréal",
+        foundation: 1909,              //г.
+        employees: 64.6,               //тыс.ч.
+        tradeTurnover: 17.47           //млрд. дол.
     },
     {
-        name = "L’Oréal",
-        foundation = 1909,              //г.
-        employees = 64.6,               //тыс.ч.
-        tradeTurnover = 17.47           //млрд. дол.        
+        name: "Microsoft",
+        foundation: 1975,              //г.
+        employees: 89.8,               //тыс.ч.
+        tradeTurnover: 24.09           //млрд. дол.
     },
     {
-        name = "Microsoft",
-        foundation = 1975,              //г.
-        employees = 89.8,               //тыс.ч.
-        tradeTurnover = 24.09           //млрд. дол.        
+        name: "Nissan",
+        foundation: 1933,              //г.
+        employees: 159.8,               //тыс.ч.
+        tradeTurnover: 94.62           //млрд. дол.
     },
     {
-        name = "Nissan",
-        foundation = 1933,              //г.
-        employees = 159.8,               //тыс.ч.
-        tradeTurnover = 94.62           //млрд. дол.        
+        name: "Petronas",
+        foundation: 1974,              //г.
+        employees: 33.9,               //тыс.ч.
+        tradeTurnover: 51           //млрд. дол.
     },
     {
-        name = "Petronas",
-        foundation = 1974,              //г.
-        employees = 33.9,               //тыс.ч.
-        tradeTurnover = 51           //млрд. дол.        
+        name: "Philips",
+        foundation: 1891,              //г.
+        employees: 114.5,               //тыс.ч.
+        tradeTurnover: 2.25           //млрд. дол.
     },
     {
-        name = "Philips",
-        foundation = 1891,              //г.
-        employees = 114.5,               //тыс.ч.
-        tradeTurnover = 2.25           //млрд. дол.        
+        name: "Samsung",
+        foundation: 1938,              //г.
+        employees: 344,               //тыс.ч.
+        tradeTurnover: 220.1           //млрд. дол.
     },
     {
-        name = "Samsung",
-        foundation = 1938,              //г.
-        employees = 344,               //тыс.ч.
-        tradeTurnover = 220.1           //млрд. дол.        
+        name: "Siemens",
+        foundation: 1847,              //г.
+        employees: 360,               //тыс.ч.
+        tradeTurnover: 73.51           //млрд. дол.
     },
     {
-        name = "Siemens",
-        foundation = 1847,              //г.
-        employees = 360,               //тыс.ч.
-        tradeTurnover = 73.51           //млрд. дол.        
+        name: "Sony",
+        foundation: 1946,              //г.
+        employees: 140,               //тыс.ч.
+        tradeTurnover: 75.41          //млрд. дол.
     },
     {
-        name = "Sony",
-        foundation = 1946,              //г.
-        employees = 140,               //тыс.ч.
-        tradeTurnover =  75.41          //млрд. дол.        
+        name: "The Walt Disney Company",
+        foundation: 1923,              //г.
+        employees: 150,               //тыс.ч.
+        tradeTurnover: 37.84           //млрд. дол.
     },
     {
-        name = "The Walt Disney Company",
-        foundation = 1923,              //г.
-        employees = 150,               //тыс.ч.
-        tradeTurnover = 37.84           //млрд. дол.        
-    },
-    {
-        name = "Toyota",
-        foundation = 1937,              //г.
-        employees = 320.5,               //тыс.ч.
-        tradeTurnover = 204.1           //млрд. дол.        
+        name: "Toyota",
+        foundation: 1937,              //г.
+        employees: 320.5,               //тыс.ч.
+        tradeTurnover: 204.1           //млрд. дол.
     }
 ];
-
 
 
 /*
-var metalsArray = [
-    {
-        name: "Алюминий",
-        density: 2.7,  //г/см^3
-        meltingPoint: 660, //K
-        brinellsHardness: 25,
-        heatCapacity: 218.0
-    }
-];
-*/
+ var metalsArray = [
+ {
+ name: "Алюминий",
+ density: 2.7,  //г/см^3
+ meltingPoint: 660, //K
+ brinellsHardness: 25,
+ heatCapacity: 218.0
+ }
+ ];
+ */
 //http://www.mexel.narod.ru/Metall.html
 
 
