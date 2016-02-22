@@ -17,6 +17,10 @@
 	font-size: 16px;
 }
 
-#choose-1:focus, #choose-2:focus{
-	background: #f07f4e;
+
+.color-red{
+	color: red;
+}
+.color-green{
+	color: green;
 }
