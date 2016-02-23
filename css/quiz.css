@@ -1,26 +1,27 @@
-.main-block{
-  max-width: 800px;
+.main-block {
+    max-width: 800px;
 }
 
-
-#question-text{
-	font-family: 'Russo One', sans-serif;
-	font-size: 20px;
-	text-align: center;	
-	padding: 0 20px 20px 20px;
-}
-#question-text p:first-of-type{
-	font-size: 32px;
-}
-.btn{
-	font-weight: bold;
-	font-size: 16px;
+#question-text {
+    font-family: 'Russo One', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    padding: 0 20px 20px 20px;
 }
 
-
-.color-red{
-	color: red;
+#question-text p:first-of-type {
+    font-size: 32px;
 }
-.color-green{
-	color: green;
+
+.btn {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.color-red {
+    color: red;
+}
+
+.color-green {
+    color: green;
 }

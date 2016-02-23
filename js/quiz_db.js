@@ -446,7 +446,7 @@ var inventionsQuestions = {
     inventionYear: "Какое из этих изобретений появилось позже?"
 };
 
-var corporationsQuestion = [
+var corporationsArray = [
     {
         name: "IKEA",
         foundation: 1943,       //г.
@@ -599,7 +599,11 @@ var corporationsQuestion = [
     }
 ];
 
-
+var corporationsQuestion = {
+    foundation: "Какая из этих корпораций основана позже?",
+    employees: "В какой из этих корпорацией больше сотрудников?",
+    tradeTurnover: "Какая из этих корпораций имеет больший торговый оборот?"
+};
 /*
  var metalsArray = [
  {
