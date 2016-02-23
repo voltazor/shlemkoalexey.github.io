@@ -604,17 +604,135 @@ var corporationsQuestion = {
     employees: "В какой из этих корпорацией больше сотрудников?",
     tradeTurnover: "Какая из этих корпораций имеет больший торговый оборот?"
 };
-/*
+
+
  var metalsArray = [
- {
- name: "Алюминий",
- density: 2.7,  //г/см^3
- meltingPoint: 660, //K
- brinellsHardness: 25,
- heatCapacity: 218.0
- }
- ];
- */
+    {
+       name: "Алюминий",
+       density: 2.7,  //г/см^3
+       meltingPoint: 660, //С
+       brinellsHardness: 25,
+    },
+    {
+       name: "Вольфрам",
+       density: 19.3,  //г/см^3
+       meltingPoint: 3400, //с
+       brinellsHardness: 262,        
+    },
+    {
+       name: "Железо",
+       density: 7.87,  //г/см^3
+       meltingPoint: 1540, //с
+       brinellsHardness: 50,        
+    },
+    {
+       name: "Золото",
+       density: 19.3,  //г/см^3
+       meltingPoint: 1063, //с
+       brinellsHardness: 18,        
+    },
+    {
+       name: "Иридий",
+       density: 22.4,  //г/см^3
+       meltingPoint: 2410, //с
+       brinellsHardness: 170,        
+    },
+    {
+       name: "Кадмий",
+       density: 8.65,  //г/см^3
+       meltingPoint: 320.9, //с
+       brinellsHardness: 21,        
+    },
+    {
+       name: "Кобальт",
+       density: 8.85,  //г/см^3
+       meltingPoint: 1500, //с
+       brinellsHardness: 102,        
+    },
+    {
+       name: "Медь",
+       density: 8.92,  //г/см^3
+       meltingPoint: 1083, //с
+       brinellsHardness: 35,        
+    },
+    {
+       name: "Молибден",
+       density: 10.2,  //г/см^3
+       meltingPoint: 2620, //с
+       brinellsHardness: 153,        
+    },
+    {
+       name: "Никель",
+       density: 8.96,  //г/см^3
+       meltingPoint: 1453, //с
+       brinellsHardness: 68,        
+    },
+    {
+       name: "Олово",
+       density: 7.29,  //г/см^3
+       meltingPoint: 231.9, //с
+       brinellsHardness: 5.2,        
+    },
+    {
+       name: "Палладий",
+       density: 12.02,  //г/см^3
+       meltingPoint: 1552, //с
+       brinellsHardness: 46,        
+    },
+    {
+       name: "Платина",
+       density: 21.45,  //г/см^3
+       meltingPoint: 1773, //с
+       brinellsHardness: 40,        
+    },
+    {
+       name: "Родий",
+       density: 12.48,  //г/см^3
+       meltingPoint: 1970, //с
+       brinellsHardness: 102,        
+    },
+    {
+       name: "Свинец",
+       density: 11.34,  //г/см^3
+       meltingPoint: 327, //с
+       brinellsHardness: 3.9,        
+    },
+    {
+       name: "Титан",
+       density: 4.52,  //г/см^3
+       meltingPoint: 1670, //с
+       brinellsHardness: 73,        
+    },
+    {
+       name: "Хром",
+       density: 7.19,  //г/см^3
+       meltingPoint: 1900, //с
+       brinellsHardness: 114,        
+    },
+    {
+       name: "Цинк",
+       density: 7.14,  //г/см^3
+       meltingPoint: 419.5, //с
+       brinellsHardness: 42,        
+    }
+];
 //http://www.mexel.narod.ru/Metall.html
+ var metalsQuestions = {
+    density: "Какой из этих металлов обладает большей плотностью?",//г/см^3
+    meltingPoint: "Какой из этих металлов более тугоплавкий?",//с
+    brinellsHardness: "Какой из этих металлов более твердый?" //единиц
+ };
+ 
+
+
+
+
+
+
+
+
+
+
+
 
 

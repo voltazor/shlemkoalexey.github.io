@@ -110,13 +110,22 @@ function setAnswerText(question) {
             answerText = question1object.name + " - изобретение " + question1object.inventionYear + " года, а " + question2object.name + " - " + question2object.inventionYear + " года."
             break;
         case corporationsQuestion.foundation:
-            answerText = "";
+            answerText = "Компания "+question1object.name + " основана в "+question1object.foundation+" году, а "+question2object.name + " - в "+ question2object.foundation + " году.";
             break;
-        case  corporationsQuestion.employees:
-            answerText = "";
+        case corporationsQuestion.employees:
+            answerText = "В компании "+question1object.name+" "+question1object.employees +" тыс. сотрудников, а в "+question2object.name+" - " + question2object.employees+" тыс.";
             break;
-        case    corporationsQuestion.tradeTurnover:
-            answerText = "";
+        case corporationsQuestion.tradeTurnover:
+            answerText = "Компания "+question1object.name+" имеет годовой оборот "+question1object.tradeTurnover+" млрд. дол., а "+question2object.name+" - "+question2object.tradeTurnover+" млрд.дол.";
+            break;
+        case metalsQuestions.density:
+            answerText = question1object.name+" имеет плотность "+question1object.density+" г/см<sup>3</sup>, а "+question2object.name+" - "+question2object.density+" г/см<sup>3</sup>.";
+            break;
+        case metalsQuestions.meltingPoint:
+            answerText = question1object.name+" имеет температуру плавления "+question1object.meltingPoint+" °C, а "+question2object.name+" - "+question2object.meltingPoint+" °C.";
+            break;
+        case metalsQuestions.brinellsHardness:
+            answerText = question1object.name+" имеет твердость "+question1object.brinellsHardness+" ед. по Бринеллю, а "+question2object.name+" - "+question2object.brinellsHardness+" ед.";
             break;
         default:
             alert("Question generation error!");
@@ -155,7 +164,14 @@ $(document).ready(function () {
             bindEvents(objectKeyForQuestion);
             setAnswerText(questionText);
             console.log(answerText);
-        }
+        } else if ($("#theme-selector").val() === "Металлы") {
+            setObjectsForQuestion(metalsArray);
+            setQuestionText(objectKeyForQuestion, metalsQuestions);
+            createQuestionInterface();
+            bindEvents(objectKeyForQuestion);
+            setAnswerText(questionText);
+            console.log(answerText);            
+        };
 
 
     });
