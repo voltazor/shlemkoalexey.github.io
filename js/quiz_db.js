@@ -615,7 +615,7 @@ var corporationsQuestion = {
     },
     {
        name: "Вольфрам",
-       density: 19.3,  //г/см^3
+       density: 19.25,  //г/см^3
        meltingPoint: 3400, //с
        brinellsHardness: 262,        
     },
@@ -627,7 +627,7 @@ var corporationsQuestion = {
     },
     {
        name: "Золото",
-       density: 19.3,  //г/см^3
+       density: 19.32,  //г/см^3
        meltingPoint: 1063, //с
        brinellsHardness: 18,        
     },
