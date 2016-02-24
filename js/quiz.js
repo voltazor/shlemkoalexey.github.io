@@ -107,7 +107,7 @@ function setAnswerText(question) {
             answerText = question1object.name + " имеет ИЧР " + question1object.HDI + " , а " + question2object.name + " - " + question2object.HDI + ".";
             break;
         case inventionsQuestions.inventionYear:
-            answerText = question1object.name + " - изобретение " + question1object.inventionYear + " года, а " + question2object.name + " - " + question2object.inventionYear + " года."
+            answerText = question1object.name + " - изобретение " + question1object.inventionYear + " года, а " + question2object.name + " - " + question2object.inventionYear + " года.";
             break;
         case corporationsQuestion.foundation:
             answerText = "Компания "+question1object.name + " основана в "+question1object.foundation+" году, а "+question2object.name + " - в "+ question2object.foundation + " году.";
@@ -171,7 +171,7 @@ $(document).ready(function () {
             bindEvents(objectKeyForQuestion);
             setAnswerText(questionText);
             console.log(answerText);            
-        };
+        }
 
 
     });
