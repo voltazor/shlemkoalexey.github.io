@@ -2,97 +2,110 @@
 #040505 - black for background
 #c68f01 - orange for text
 */
-body{
-	font-family: 'Glegoo', serif;
-	background: #040505;
-	color: #c68f01;
-	font-weight: 700;
-	position: fixed;
+body {
+    font-family: 'Glegoo', serif;
+    background: url("../src/glados.jpg");
+    color: #c68f01;
+    font-weight: 700;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-
     margin-bottom: 10%;
+
 }
 
-p{
-	color: #c68f01;
-	font-size: 32px;
+p {
+    color: #c68f01;
+    font-size: 32px;
 }
 
-p.smaller-text{
-	font-size: 14px;
-}
-.scroller{
-	height: 60%;
-	overflow: auto;
-	overflow-y:hidden;
-	overflow-x:hidden;
-	margin-top: 10%;
+p.smaller-text {
+    font-size: 14px;
 }
 
-audio{
-	display: none;
+.scroller {
+    height: 60%;
+    width: 80%;
+    overflow: auto;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    margin-top: 10%;
 }
 
-
-
-p.smaller-text:nth-last-child(2){
-	opacity: 0.93;
-}
-p.smaller-text:nth-last-child(3){
-	opacity: 0.86;
-}
-p.smaller-text:nth-last-child(4){
-	opacity: 0.79;
-}
-p.smaller-text:nth-last-child(5){
-	opacity: 0.72;
-}
-p.smaller-text:nth-last-child(6){
-	opacity: 0.65;
-}
-p.smaller-text:nth-last-child(7){
-	opacity: 0.58;
-}
-p.smaller-text:nth-last-child(8){
-	opacity: 0.51;
-}
-p.smaller-text:nth-last-child(9){
-	opacity: 0.44;
-}
-p.smaller-text:nth-last-child(10){
-	opacity: 0.37;
-}
-p.smaller-text:nth-last-child(11){
-	opacity: 0.3;
-}
-p.smaller-text:nth-last-child(12){
-	opacity: 0.23;
-}
-p.smaller-text:nth-last-child(13){
-	opacity: 0.16;
-}
-p.smaller-text:nth-last-child(14){
-	opacity: 0.09;
-}
-p.smaller-text:nth-last-child(n+15){
-	opacity: 0.0;
+audio {
+    display: none;
 }
 
-#control-butons{
-	position: absolute;
-	top: 0;
-	left: 10%;
+p.smaller-text:nth-last-child(2) {
+    opacity: 0.93;
 }
+
+p.smaller-text:nth-last-child(3) {
+    opacity: 0.86;
+}
+
+p.smaller-text:nth-last-child(4) {
+    opacity: 0.79;
+}
+
+p.smaller-text:nth-last-child(5) {
+    opacity: 0.72;
+}
+
+p.smaller-text:nth-last-child(6) {
+    opacity: 0.65;
+}
+
+p.smaller-text:nth-last-child(7) {
+    opacity: 0.58;
+}
+
+p.smaller-text:nth-last-child(8) {
+    opacity: 0.51;
+}
+
+p.smaller-text:nth-last-child(9) {
+    opacity: 0.44;
+}
+
+p.smaller-text:nth-last-child(10) {
+    opacity: 0.37;
+}
+
+p.smaller-text:nth-last-child(11) {
+    opacity: 0.3;
+}
+
+p.smaller-text:nth-last-child(12) {
+    opacity: 0.23;
+}
+
+p.smaller-text:nth-last-child(13) {
+    opacity: 0.16;
+}
+
+p.smaller-text:nth-last-child(14) {
+    opacity: 0.09;
+}
+
+p.smaller-text:nth-last-child(n+15) {
+    opacity: 0.0;
+}
+
+#control-butons {
+    position: absolute;
+    top: 0;
+    left: 10%;
+}
+
 #control-butons button,
 #control-butons button:focus,
-#control-butons button:active{
-	font-size: 40px;
-	width: 75px;
-	height: 75px;
-	color: white;
-	background: black;
-	border: none;
+#control-butons button:active {
+    font-size: 40px;
+    width: 100px;
+    height: 75px;
+    background: black;
+    border: none;
 }
