@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Quiz</title>
+    <link rel="shortcut icon" href="../src/icon.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="quiz_redisigned.css">
+    <meta charset="UTF-8">
+    <link href="../css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css"/>
+    <style>
+   @font-face {
+    font-family: High Tower Text; /* Гарнитура шрифта */
+    src: url(../fonts/HTOWERT.ttf); /* Путь к файлу со шрифтом */
+   }
+    </style>
+</head>
+
+<body>
+<div class="container-fluid">
+    <div class="header">
+        QUIZ
+    </div>    
+
+    <div class="main-block">
+        <select id="theme-selector">
+            <option>Планеты</option>
+            <option>Государства</option>
+            <option>Изобретения</option>
+            <option>Корпорации</option>
+            <option>Металлы</option>
+        </select>
+        <br>
+        <button id="generate-question">
+        Начать викторину
+        </button>
+        <br>
+        <div id="question-section">
+            <div id = "question-number">
+               Вопрос №5
+            </div>
+            <div id = "question-text">
+                Motherfucker do that shit to me, he better paralyze my ass, 'cause I'll kill the motherfucker, know what I'm sayin'?
+            </div>
+        </div>
+        <button id="choose-1">Yes</button>
+        <button id="choose-2">What?</button>
+    
+        <div class="answers">
+            <div class="number number1">1</div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="number number2">2</div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="number number3">3</div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="number number4">4</div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="number number5">5</div>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <span>My project © A non-profit project</span>
+    <span>A. Shlemko 2016</span>
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="quiz_db_redisigned.js"></script>
+<script src="quiz_redisigned.js"></script>
+
+</body>
