@@ -22,12 +22,14 @@ body{
     padding: 0;
     margin: 0;
 }
-
+.container-fluid{
+    padding: 0;
+}
 .header{
     font-family: 'High Tower Text', sans-serif;
     text-align: center;
     font-size: 32px;
-    margin: 90px 0;
+    margin: 7.7% 0;
 }
 .main-block{
     text-align: center;
@@ -38,6 +40,12 @@ body{
     background: #ebebeb;
     padding: 5px;
 }
+#theme-selector:disabled,
+#generate-question:disabled,
+#choose-1:disabled,
+#choose-2:disabled{
+    opacity: 0.5;
+}
 #generate-question{
     width: 200px;
     color: white;
@@ -45,11 +53,11 @@ body{
     border: none;
     padding: 5px;
     font-weight: bold;
-    margin-top: 18px;
+    margin-top: 1.6%;
 }
 
 #question-section{
-    margin-top: 56px;
+    margin-top: 5.2%;
 }
 
 #question-number{
@@ -59,7 +67,8 @@ body{
 #question-text{
     width: 500px;
     margin: 24px auto;
-    height: 100px;
+    min-height: 60px;
+    height: 8.6%;
 }
 #choose-1,
 #choose-2{
@@ -67,14 +76,14 @@ body{
     background: #178ba4;
     border: none;
     padding: 5px;
-    width: 100px;
+    min-width: 8.6%;
     font-weight: bold;
     margin-right: 10px;
     margin-left: 10px;
 }
 
 .answers{
-     margin-top: 56px;   
+     margin-top: 5.2%;   
 }
 .answers div{
     display: inline-block;
@@ -91,12 +100,10 @@ body{
     margin-bottom: 2px;
 }
 
-.answers .number1,
-.answers .number2,
-.answers .number4{
+.answers .answer-correct{
     background: #269793;
 }
-.answers .number3{
+.answers .answer-wrong{
     background: #981f29;
 }
 
@@ -110,22 +117,19 @@ body{
 
 }
 .footer span{
-    position: relative;
-    top: 40%;
+    position: absolute;
     font-weight: bold;
+    font-size: 12px;
 }
 .footer span:nth-child(1){
+    top: 30%;
     left: 15%;
 }
 .footer span:nth-child(2){
-    left: 55%;
+    left: 75%;
+    top: 30%;
 }
-
-
-
-
-
-
-
-
-
+.footer span:nth-child(3){
+    left: 75%;
+    top: 60%;
+}

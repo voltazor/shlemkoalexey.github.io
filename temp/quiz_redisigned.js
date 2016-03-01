@@ -6,6 +6,10 @@ var question2object;
 var objectKeyForQuestion;
 var answerText;
 
+var QUESTION;
+var ANSWER;
+
+var playerAnswers = [];
 
 function questionCounterUpdate() {
     questionCounter++;
@@ -36,6 +40,7 @@ function setObjectsForQuestion(questionArray) {
 }
 
 function createQuestionInterface() {
+    $("#question-number").html("Вопрос № "+(playerAnswers.length+1));
     $("#question-text").html(questionText);
     $("#choose-1").html(question1object.name);
     $("#choose-2").html(question2object.name);
@@ -49,31 +54,76 @@ function setQuestionText(questionValue, object) {
 function bindEvents(objectKeyForQuestion) {
     if (question1object[objectKeyForQuestion] > question2object[objectKeyForQuestion]) {
         $("#choose-1").click(function () {
-            $("#question-text").html("<p class='color-green'>Правильный ответ</p>");
-            $("#question-text").append(answerText);
-            correctCounterUpdate();
-            $('#choose-1, #choose-2').unbind();
+            playerAnswers.push(true);
+            if (playerAnswers.length<5) {
+                $("#question-text").append(answerText);
+                correctCounterUpdate();
+                $('#choose-1, #choose-2').unbind();  
+                question(QUESTION, ANSWER);                
+            }else{
+                $("#question-number").html("Конец.");  
+                $("#question-text").html("Количество правильных ответов - " + numberOfCorrect(playerAnswers)+". Еще раз?");
+                $("#generate-question, #theme-selector").prop("disabled",false);
+                $("#choose-1, #choose-2").prop("disabled",true);
+            };
+            addColorsToAnswers(playerAnswers);
         });
         $("#choose-2").click(function () {
-            $("#question-text").html("<p class='color-red'>Неправильный ответ</p>");
-            $("#question-text").append(answerText);
-            $('#choose-1, #choose-2').unbind();
+            playerAnswers.push(false);
+            if (playerAnswers.length<5) {
+                $("#question-text").append(answerText);
+                $('#choose-1, #choose-2').unbind(); 
+                question(QUESTION, ANSWER);                
+            }else{
+                $("#question-number").html("Конец.");  
+                $("#question-text").html("Количество правильных ответов - " + numberOfCorrect(playerAnswers)+". Еще раз?");
+                $("#generate-question, #theme-selector").prop("disabled",false);
+                $("#choose-1, #choose-2").prop("disabled",true);
+            };
+            addColorsToAnswers(playerAnswers);            
         });
     } else {
         $("#choose-1").click(function () {
-            $("#question-text").html("<p class='color-red'>Неправильный ответ</p>");
-            $("#question-text").append(answerText);
-            $('#choose-1, #choose-2').unbind();
+            playerAnswers.push(false);
+            if (playerAnswers.length<5) {
+                $("#question-text").append(answerText);
+                $('#choose-1, #choose-2').unbind();   
+                question(QUESTION, ANSWER);                
+            }else{
+                $("#question-number").html("Конец."); 
+                $("#question-text").html("Количество правильных ответов - " + numberOfCorrect(playerAnswers)+". Еще раз?");
+                $("#generate-question, #theme-selector").prop("disabled",false);
+                $("#choose-1, #choose-2").prop("disabled",true);
+            };   
+            addColorsToAnswers(playerAnswers);     
         });
         $("#choose-2").click(function () {
-            $("#question-text").html("<p class='color-green'>Правильный ответ</p>");
-            $("#question-text").append(answerText);
-            correctCounterUpdate();
-            $('#choose-1, #choose-2').unbind();
+            playerAnswers.push(true);
+            if (playerAnswers.length<5) {
+                $("#question-text").append(answerText);
+                correctCounterUpdate();
+                $('#choose-1, #choose-2').unbind();          
+                question(QUESTION, ANSWER);                
+            }else{
+                $("#question-number").html("Конец.");                
+                $("#question-text").html("Количество правильных ответов - " + numberOfCorrect(playerAnswers)+". Еще раз?");
+                $("#generate-question, #theme-selector").prop("disabled",false);
+                $("#choose-1, #choose-2").prop("disabled",true);
+            };     
+            addColorsToAnswers(playerAnswers);   
         });
     }
 }
 
+function addColorsToAnswers(array){
+    for (var i = 0; i < array.length; i++) {
+        if (array[i]) {
+            $(".number"+(i+1)).addClass("answer-correct");
+        }else{
+            $(".number"+(i+1)).addClass("answer-wrong");
+        };
+    };
+}
 function setAnswerText(question) {
     switch (question) {
         case solarSystemQuestions.distanceFromSun:
@@ -132,48 +182,51 @@ function setAnswerText(question) {
     }
 }
 
+function question (array, questions){
+    setObjectsForQuestion(array);
+    setQuestionText(objectKeyForQuestion, questions);
+    createQuestionInterface();
+    bindEvents(objectKeyForQuestion);
+    setAnswerText(questionText);       
+}
+
+function numberOfCorrect(array){
+    var a = 0;
+    for (var i = 0; i <= array.length; i++){
+        if (array[i]) {
+            a++;
+        };
+    }
+    return a;
+}
+
 
 $(document).ready(function () {
     $("#theme-selector").prop('value', false);
     $("#generate-question").click(function () {
+        playerAnswers = [];
+        $('#choose-1, #choose-2').unbind();
+        $(".answers div").removeClass("answer-correct");
+        $(".answers div").removeClass("answer-wrong");
         if ($("#theme-selector").val() === "Планеты") {
-            setObjectsForQuestion(solarSystemArray);
-            setQuestionText(objectKeyForQuestion, solarSystemQuestions);
-            createQuestionInterface();
-            bindEvents(objectKeyForQuestion);
-            setAnswerText(questionText);
-            console.log(answerText);
+            QUESTION = solarSystemArray;
+            ANSWER = solarSystemQuestions;       
         } else if ($("#theme-selector").val() === "Государства") {
-            setObjectsForQuestion(countriesArray);
-            setQuestionText(objectKeyForQuestion, countriesQuestions);
-            createQuestionInterface();
-            bindEvents(objectKeyForQuestion);
-            setAnswerText(questionText);
-            console.log(answerText);
-        } else if ($("#theme-selector").val() === "Изобретения XVII - XX веков") {
-            setObjectsForQuestion(inventionsArray);
-            setQuestionText(objectKeyForQuestion, inventionsQuestions);
-            createQuestionInterface();
-            bindEvents(objectKeyForQuestion);
-            setAnswerText(questionText);
-            console.log(answerText);
-        } else if ($("#theme-selector").val() === "Транснациональные корпорации") {
-            setObjectsForQuestion(corporationsArray);
-            setQuestionText(objectKeyForQuestion, corporationsQuestion);
-            createQuestionInterface();
-            bindEvents(objectKeyForQuestion);
-            setAnswerText(questionText);
-            console.log(answerText);
+            QUESTION = countriesArray;
+            ANSWER = countriesQuestions;
+        } else if ($("#theme-selector").val() === "Изобретения") {
+            QUESTION = inventionsArray;
+            ANSWER = inventionsQuestions;
+        } else if ($("#theme-selector").val() === "Корпорации") {
+            QUESTION = corporationsArray;
+            ANSWER = corporationsQuestion;
         } else if ($("#theme-selector").val() === "Металлы") {
-            setObjectsForQuestion(metalsArray);
-            setQuestionText(objectKeyForQuestion, metalsQuestions);
-            createQuestionInterface();
-            bindEvents(objectKeyForQuestion);
-            setAnswerText(questionText);
-            console.log(answerText);            
+            QUESTION = metalsArray;
+            ANSWER = metalsQuestions;   
         }
-
-
+    question(QUESTION, ANSWER);
+    $("#generate-question, #theme-selector").prop("disabled",true);
+    $("#choose-1, #choose-2").prop("disabled",false);
     });
-
 });
+

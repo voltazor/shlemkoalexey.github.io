@@ -3,75 +3,72 @@
 <head>
     <title>Quiz</title>
     <link rel="shortcut icon" href="../src/icon.png" type="image/x-icon">
-    <!--    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"> -->
     <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="../css/quiz.css">
     <meta charset="UTF-8">
-    <link href='https://fonts.googleapis.com/css?family=Russo+One&subset=latin,cyrillic' rel='stylesheet'
-          type='text/css'>
-    <link href="../css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css"/>
-    <!-- <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-72424319-1', 'auto');
-      ga('send', 'pageview');
-    </script>-->
+    <style>
+   @font-face {
+    font-family: High Tower Text; /* Гарнитура шрифта */
+    src: url(../fonts/HTOWERT.ttf); /* Путь к файлу со шрифтом */
+   }
+    </style>
 </head>
 
 <body>
-<div class="container-fluid main-block">
-    <!--<audio autoplay loop controls>-->
-        <!--<source src="../src/sound.mp3">-->
-        <!--<source src="../src/sound.ogg">-->
-    <!--</audio>-->
-    <div class="well">
-        <div class="row">
-            <div class="col-xs-6">
-                <select class="form-control" id="theme-selector">
-                    <option>Планеты</option>
-                    <option>Государства</option>
-                    <option>Изобретения XVII - XX веков</option>
-                    <option>Транснациональные корпорации</option>
-                    <option>Металлы</option>
-                </select>
+<div class="container-fluid">
+    <div class="header">
+        QUIZ
+    </div>    
+
+    <div class="main-block">
+        <select id="theme-selector">
+            <option>Планеты</option>
+            <option>Государства</option>
+            <option>Изобретения</option>
+            <option>Корпорации</option>
+            <option>Металлы</option>
+        </select>
+        <br>
+        <button id="generate-question">
+        Начать викторину
+        </button>
+        <br>
+        <div id="question-section">
+            <div id = "question-number">
+               
             </div>
-            <div class="col-xs-6">
-                <button class="btn btn-block btn-primary" id="generate-question">Вопрос</button>
+            <div id = "question-text">
+                Выберете тему вопросов в выпадающем меню.
             </div>
+        </div>
+        <button id="choose-1" disabled>Вариант 1</button>
+        <button id="choose-2" disabled>Вариант 2</button>
+    
+        <div class="answers">
+            <div class="number number1">1</div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="number number2">2</div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="number number3">3</div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="number number4">4</div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="number number5">5</div>
         </div>
     </div>
-    <div class="well">
-        <div class="row">
-            <div class="col-xs-6">
-                <span>Вопрос № </span>
-                <span id="question-counter"></span>
-            </div>
-            <div class="col-xs-6">
-                <span>Верных ответов: </span>
-                <span id="correct-counter">0</span>
-            </div>
-        </div>
-    </div>
-    <div class="well">
-        <div id="question-text">
-        </div>
-        <div class="row">
-            <div class="col-xs-6">
-                <button class="btn btn-block btn-warning" id="choose-1">Выбор 1</button>
-            </div>
-            <div class="col-xs-6">
-                <button class="btn btn-block btn-warning" id="choose-2">Выбор 2</button>
-            </div>
-        </div>
+
+    <div class="footer">
+       <span>My project © A non-profit project 2016</span>
+       <span>Developed by A. Shlemko</span>
+       <span>Designed by S. Grinevich</span>
     </div>
 </div>
 
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> -->
 <script src="../js/quiz_db.js"></script>
 <script src="../js/quiz.js"></script>
 
