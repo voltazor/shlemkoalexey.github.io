@@ -202,7 +202,7 @@ function numberOfCorrect(array){
 
 
 $(document).ready(function () {
-    $("#theme-selector").prop('value', false);
+    //$("#theme-selector").prop('value', false);
     $("#generate-question").click(function () {
         playerAnswers = [];
         $('#choose-1, #choose-2').unbind();
