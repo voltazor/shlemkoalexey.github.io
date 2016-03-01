@@ -99,7 +99,12 @@ p.smaller-text:nth-last-child(n+15) {
     top: 0;
     left: 10%;
 }
-
+#enable-sound{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 200px;
+}
 #control-butons button,
 #control-butons button:focus,
 #control-butons button:active {

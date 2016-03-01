@@ -118,9 +118,9 @@ function bindEvents(objectKeyForQuestion) {
 function addColorsToAnswers(array){
     for (var i = 0; i < array.length; i++) {
         if (array[i]) {
-            $(".number"+(i+1)).addClass("answer-correct");
+            $(".number"+(i+1)).addClass("answer-correct", 500);
         }else{
-            $(".number"+(i+1)).addClass("answer-wrong");
+            $(".number"+(i+1)).addClass("answer-wrong", 500);
         };
     };
 }
@@ -206,8 +206,8 @@ $(document).ready(function () {
     $("#generate-question").click(function () {
         playerAnswers = [];
         $('#choose-1, #choose-2').unbind();
-        $(".answers div").removeClass("answer-correct");
-        $(".answers div").removeClass("answer-wrong");
+        $(".answers div").removeClass("answer-correct", 500);
+        $(".answers div").removeClass("answer-wrong", 500);
         if ($("#theme-selector").val() === "Планеты") {
             QUESTION = solarSystemArray;
             ANSWER = solarSystemQuestions;       

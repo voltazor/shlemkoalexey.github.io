@@ -1,5 +1,6 @@
 var currentSecond = 0;
 var player = $("#music-player");
+var play = $("#btn-play");
 var debugTime = 0;
 
 var lyrics = [];
@@ -156,19 +157,22 @@ outputtingSpeed[36] = 30;
 
 
 $(document).ready(function () {
+
     $("body .container p").addClass("smaller-text");
     $("body .container").animate({scrollTop: $('body .container').prop("scrollHeight")}, 200);
-    $("#music-player").prop("currentTime", debugTime); //delete it!
+    player.prop("currentTime", debugTime); //delete it!
     setInterval(function () {
         currentSecond = Number(player.prop("currentTime").toFixed());
-        $("#btn-timer").html(currentSecond);
         printText();
     }, 1000);
 
 
     $("#btn-play").click(function () {
-        $("#music-player").trigger('play');
-        $("#btn-play").toggle("fade");
+        $("body .container p").html("<br>");
+        player.trigger('play');
+        play.fadeOut(500);
+        $("#enable-sound").fadeOut(500);
+        $("body .container p").fadeIn(500);
     });
 
 });
@@ -176,11 +180,16 @@ $(document).ready(function () {
 function printText() {
     for (var i = 0; i <= timings.length; i++) {
         if (timings[i] == currentSecond) {
-            // $("body .container").append("<p>#</p>");
             $("body .container p").addClass("smaller-text");
             $("body .container").append("<p>");
             printTextWithDelay($("body .container p:last-child"), lyrics[i], outputtingSpeed[i]);
-            $("body .container").animate({scrollTop: $('body .container').prop("scrollHeight")}, 200);
+        }
+        $("body .container").animate({scrollTop: $('body .container').prop("scrollHeight")}, 200);
+        if (currentSecond == 176){
+            play.html("AGAIN");
+            play.fadeIn();
+            $("body .container p").fadeOut(1000);
+
         }
     }
 }
