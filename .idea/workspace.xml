@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4b6d569b-43d6-48c6-b999-956dcd55ba69" name="Default" comment="music page finished">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/shlemkoalexey.github.io.iml" afterPath="$PROJECT_DIR$/.idea/shlemkoalexey.github.io.iml" />
+    <list default="true" id="4b6d569b-43d6-48c6-b999-956dcd55ba69" name="Default" comment="quiz cosmetic fixes and music page patch">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/music.css" afterPath="$PROJECT_DIR$/css/music.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/quiz.css" afterPath="$PROJECT_DIR$/css/quiz.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/music.js" afterPath="$PROJECT_DIR$/js/music.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/quiz.js" afterPath="$PROJECT_DIR$/js/quiz.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/music.html" afterPath="$PROJECT_DIR$/res/music.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/quiz.html" afterPath="$PROJECT_DIR$/res/quiz.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/temp/webinterface.css" afterPath="$PROJECT_DIR$/temp/webinterface.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/temp/webinterface.html" afterPath="$PROJECT_DIR$/temp/webinterface.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/temp/webinterface.js" afterPath="$PROJECT_DIR$/temp/webinterface.js" />
     </list>
     <ignored path="shlemkoalexey.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,14 +27,14 @@
     <favorites_list name="shlemkoalexey.github.io" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
+    <splitter split-orientation="horizontal" split-proportion="0.4134727">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="music.html" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/res/music.html">
+          <file leaf-file-name="webinterface.html" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/temp/webinterface.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.84707904">
-                  <caret line="38" column="11" selection-start-line="38" selection-start-column="11" selection-end-line="38" selection-end-column="11" />
+                <state vertical-scroll-proportion="0.51399773">
+                  <caret line="27" column="55" selection-start-line="27" selection-start-column="55" selection-end-line="27" selection-end-column="55" />
                   <folding />
                 </state>
               </provider>
@@ -46,24 +43,22 @@
         </leaf>
       </split-first>
       <split-second>
-        <leaf>
-          <file leaf-file-name="music.js" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/js/music.js">
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="webinterface.js" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/temp/webinterface.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.08388158">
-                  <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
-                  <folding>
-                    <element signature="n#!!block;n#printTextWithDelay#0" expanded="false" />
-                  </folding>
+                <state vertical-scroll-proportion="0.70293796">
+                  <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+                  <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="music.css" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/css/music.css">
+          <file leaf-file-name="webinterface.css" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/temp/webinterface.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-25.846153">
-                  <caret line="103" column="11" selection-start-line="103" selection-start-column="11" selection-end-line="103" selection-end-column="11" />
+                <state vertical-scroll-proportion="-27.461538">
+                  <caret line="57" column="28" selection-start-line="57" selection-start-column="28" selection-end-line="57" selection-end-column="28" />
                   <folding />
                 </state>
               </provider>
@@ -102,6 +97,9 @@
         <option value="$PROJECT_DIR$/css/music.css" />
         <option value="$PROJECT_DIR$/res/music.html" />
         <option value="$PROJECT_DIR$/js/music.js" />
+        <option value="$PROJECT_DIR$/temp/webinterface.html" />
+        <option value="$PROJECT_DIR$/temp/webinterface.css" />
+        <option value="$PROJECT_DIR$/temp/webinterface.js" />
       </list>
     </option>
   </component>
@@ -168,6 +166,7 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -183,6 +182,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="shlemkoalexey.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shlemkoalexey.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shlemkoalexey.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="temp" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -230,7 +243,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -256,9 +268,13 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="UPDATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/css/quiz.css</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/js/quiz.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/res/quiz.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/res/landing-portfolio-example.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/res/mobile-app-landing-example.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/res/music.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/res/randomquotegenerator.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/res/textoutputting.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/res/todo.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/res/weather.html</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Created" />
@@ -266,11 +282,9 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="CREATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/fonts/HTOWERT.TTF</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/temp/quiz_db_redisigned.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/temp/quiz_redisigned.css</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/temp/quiz_redisigned.html</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/temp/quiz_redisigned.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/temp/webinterface.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/temp/webinterface.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/temp/webinterface.js</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Deleted" />
@@ -278,8 +292,10 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="true" />
           <option name="myId" value="REMOVED_FROM_REPOSITORY" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/js/quiz_backup.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/js/weather-old.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/temp/quiz_db_redisigned.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/temp/quiz_redisigned.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/temp/quiz_redisigned.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/temp/quiz_redisigned.js</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Restored" />
@@ -361,11 +377,20 @@
       </FILE-GROUP>
     </UpdatedFiles>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.index.html">
+  <component name="RunManager" selected="JavaScript Debug.webinterface.html">
     <configuration default="false" name="index.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/shlemkoalexey.github.io/index.html">
       <method />
     </configuration>
     <configuration default="false" name="textoutputting.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/shlemkoalexey.github.io/res/textoutputting.html">
+      <method />
+    </configuration>
+    <configuration default="false" name="music.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/shlemkoalexey.github.io/res/music.html">
+      <method />
+    </configuration>
+    <configuration default="false" name="music.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="C:/Program Files (x86)/nodejs/node" path-to-js-file="music.js" working-dir="$PROJECT_DIR$/js">
+      <method />
+    </configuration>
+    <configuration default="false" name="webinterface.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/shlemkoalexey.github.io/temp/webinterface.html">
       <method />
     </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
@@ -417,14 +442,20 @@
       <recursive>false</recursive>
       <method />
     </configuration>
-    <list size="2">
+    <list size="5">
       <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
       <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.textoutputting.html" />
+      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.music.html" />
+      <item index="3" class="java.lang.String" itemvalue="Node.js.music.js" />
+      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.webinterface.html" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
-        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.textoutputting.html" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.webinterface.html" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.music.html" />
+        <item index="2" class="java.lang.String" itemvalue="Node.js.music.js" />
+        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
+        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.textoutputting.html" />
       </list>
     </recent_temporary>
   </component>
@@ -475,7 +506,13 @@
       <option name="project" value="LOCAL" />
       <updated>1456515652042</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="quiz cosmetic fixes and music page patch">
+      <created>1456855349979</created>
+      <option name="number" value="00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1456855349979</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -484,9 +521,9 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.103125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3284055" sideWeight="0.5" order="11" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3284055" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3284055" sideWeight="0.50208336" order="11" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3284055" sideWeight="0.49791667" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32946146" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -519,7 +556,8 @@
     <MESSAGE value="question theme added" />
     <MESSAGE value="audio disabled" />
     <MESSAGE value="music page finished" />
-    <option name="LAST_COMMIT_MESSAGE" value="music page finished" />
+    <MESSAGE value="quiz cosmetic fixes and music page patch" />
+    <option name="LAST_COMMIT_MESSAGE" value="quiz cosmetic fixes and music page patch" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -529,20 +567,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/res/landing-portfolio-example.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="31" column="23" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/styles.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -789,13 +813,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/materialdesignicons.min.css.map">
+      <provider editor-type-id="sourcemapFileViewerProvider">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.1225433">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
-      </provider>
-      <provider editor-type-id="sourcemapFileViewerProvider">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/styles.css">
@@ -844,7 +868,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-30.423077">
           <caret line="80" column="7" selection-start-line="80" selection-start-column="7" selection-end-line="80" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -852,7 +875,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="209" column="57" selection-start-line="209" selection-start-column="57" selection-end-line="209" selection-end-column="57" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -860,13 +882,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="2.6153846">
           <caret line="41" column="29" selection-start-line="41" selection-start-column="29" selection-end-line="41" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/music.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-25.846153">
+        <state vertical-scroll-proportion="0.0">
           <caret line="103" column="11" selection-start-line="103" selection-start-column="11" selection-end-line="103" selection-end-column="11" />
           <folding />
         </state>
@@ -874,19 +895,43 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/res/music.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.84707904">
-          <caret line="38" column="11" selection-start-line="38" selection-start-column="11" selection-end-line="38" selection-end-column="11" />
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="3" selection-start-line="0" selection-start-column="3" selection-end-line="0" selection-end-column="3" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/music.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.08388158">
-          <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="32" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
           <folding>
             <element signature="n#!!block;n#printTextWithDelay#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/temp/webinterface.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-27.461538">
+          <caret line="57" column="28" selection-start-line="57" selection-start-column="28" selection-end-line="57" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/temp/webinterface.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.51399773">
+          <caret line="27" column="55" selection-start-line="27" selection-start-column="55" selection-end-line="27" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/temp/webinterface.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.70293796">
+          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

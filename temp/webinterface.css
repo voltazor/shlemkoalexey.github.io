@@ -1,19 +1,21 @@
-body{
+body {
     background: #ffffff;
 }
 
-#main-section{
+#main-section {
     padding: 0;
     height: 100%;
 }
-#header{
+
+#header {
     height: 75px;
     width: 100%;
     background: #f2f2f2;
     display: table;
     border-bottom: 1px solid #a7a6ab;
 }
-#header p{
+
+#header p {
     display: table-cell;
     font-weight: bold;
     vertical-align: middle;
@@ -21,49 +23,44 @@ body{
     font-size: 32px;
 }
 
-
-
-
-
-
 /*
 polygon
 http://jsfiddle.net/fzzxs759/16/
 */
 
-#gallery{
-  width:100%;
-  margin:0 auto;
-  text-align:center;
-  padding: 20px 0;
+#gallery {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 0;
 }
 
-.gallery-section{
-  width: 22%;
-  min-width: 300px;
-  margin: auto;
-  background: silver;
-  overflow: hidden;
-  display: inline-block;
-  margin:20px;
-  border:1px solid black;
-  transition: 0.3s
+.gallery-section {
+    width: 22%;
+    min-width: 300px;
+    margin: auto;
+    background: silver;
+    overflow: hidden;
+    display: inline-block;
+    margin: 20px;
+    border: 1px solid black;
+    transition: 0.3s
 }
 
 .gallery-section:before {
-  content: "";
-  padding-top: 100%;
-  float: left;
+    content: "";
+    padding-top: 100%;
+    float: left;
 }
 
-.widder:hover{
-  transition: 0.3s;  
-  background-size:  auto 120% !important;
+.widder:hover {
+    transition: 0.3s;
+    background-size: auto 110% !important;
 }
 
-.heigher:hover{
-  transition: 0.3s;  
-  background-size: 120% auto !important;    
+.heigher:hover {
+    transition: 0.3s;
+    background-size: 110% auto !important;
 }
 
 

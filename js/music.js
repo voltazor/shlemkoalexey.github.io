@@ -107,7 +107,7 @@ lyrics[24] = "THAT WAS A JOKE. HA-HA! FAT CHANCE.";
 timings[24] = 124;
 outputtingSpeed[24] = 90;
 
-lyrics[25] = "Anyway this cake is great, i'ts so delicious and moist.";
+lyrics[25] = "Anyway this cake is great, it's so delicious and moist.";
 timings[25] = 129;
 outputtingSpeed[25] = 100;
 
@@ -163,6 +163,7 @@ $(document).ready(function () {
     player.prop("currentTime", debugTime); //delete it!
     setInterval(function () {
         currentSecond = Number(player.prop("currentTime").toFixed());
+        $("body .container").animate({scrollTop: $('body .container').prop("scrollHeight")}, 200);
         printText();
     }, 1000);
 
@@ -184,8 +185,8 @@ function printText() {
             $("body .container").append("<p>");
             printTextWithDelay($("body .container p:last-child"), lyrics[i], outputtingSpeed[i]);
         }
-        $("body .container").animate({scrollTop: $('body .container').prop("scrollHeight")}, 200);
-        if (currentSecond == 176){
+
+        if (currentSecond == 176) {
             play.html("AGAIN");
             play.fadeIn();
             $("body .container p").fadeOut(1000);
