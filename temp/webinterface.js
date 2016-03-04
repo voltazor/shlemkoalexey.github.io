@@ -15,7 +15,7 @@ var linksArray = {
 
 
 $(document).ready(function () {
-
+    $(".gallery-section").append("<div class=\"section-shadow\"></div>");
     for (var i = 1; i <= 12; i++) {
         widerOrHigher(linksArray["link"+i], $("#image" + i));
         $(("#image" + i)).css("background", "url(" + linksArray[("link" + i)] + ") no-repeat");
@@ -25,6 +25,7 @@ $(document).ready(function () {
 
 
 function widerOrHigher(link, image){
+    image.append("<div class=\"section-preloader\"><img src=\"preloader.gif\"></div>");
     var src = link;
     var img = document.createElement("img");
     img.src = link;
@@ -37,6 +38,6 @@ function widerOrHigher(link, image){
             image.addClass("higher"); 
             console.log("higher");      
         };
-        
+    image.find(".section-preloader").remove();
     };
 }

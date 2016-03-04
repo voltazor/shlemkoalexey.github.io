@@ -36,6 +36,7 @@ http://jsfiddle.net/fzzxs759/16/
 }
 
 .gallery-section {
+    position: relative;
     width: 22%;
     min-width: 330px;
     margin: auto;
@@ -44,7 +45,7 @@ http://jsfiddle.net/fzzxs759/16/
     display: inline-block;
     margin: 20px;
     border: 1px solid black;
-    transition: 0.33s
+    cursor: pointer;
 }
 
 .gallery-section:before {
@@ -59,24 +60,43 @@ http://jsfiddle.net/fzzxs759/16/
 }
 
 
-.wider:hover {
+/*.wider:hover {
     transition: 0.33s;
     background-size: auto 110% !important;
-}
+}*/
 
 .higher{
     background-position: center !important;
     background-size: 100%  auto !important;    
 }
 
-.higher:hover {
+/*.higher:hover {
     transition: 0.33s;
     background-size: 110% auto !important;
+}*/
+
+.section-shadow{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 0.85;
+    transition: 0.3s;
 }
-
-
-
-
+.section-shadow:hover{
+    opacity: 0;
+    transition: 0.3s;
+}
+.section-preloader{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: black;
+}
+.section-preloader img{
+    margin-top: 35%;
+    height: 30%;
+}
 
 
 
