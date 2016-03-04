@@ -10,7 +10,7 @@ body {
 #header {
     height: 75px;
     width: 100%;
-    background: #f2f2f2;
+    background: #080808;
     display: table;
     border-bottom: 1px solid #a7a6ab;
 }
@@ -46,7 +46,6 @@ http://jsfiddle.net/fzzxs759/16/
     margin: 20px;
     cursor: pointer;
 }
-
 .gallery-section:before {
     content: "";
     padding-top: 100%;
@@ -79,7 +78,7 @@ http://jsfiddle.net/fzzxs759/16/
     width: 100%;
     height: 100%;
     background: black;
-    opacity: 0.85;
+    opacity: 0.6;
     transition: 0.3s;
 }
 .section-shadow:hover{
