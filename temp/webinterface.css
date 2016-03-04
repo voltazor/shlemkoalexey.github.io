@@ -37,14 +37,14 @@ http://jsfiddle.net/fzzxs759/16/
 
 .gallery-section {
     width: 22%;
-    min-width: 300px;
+    min-width: 330px;
     margin: auto;
     background: silver;
     overflow: hidden;
     display: inline-block;
     margin: 20px;
     border: 1px solid black;
-    transition: 0.3s
+    transition: 0.33s
 }
 
 .gallery-section:before {
@@ -60,7 +60,7 @@ http://jsfiddle.net/fzzxs759/16/
 
 
 .wider:hover {
-    transition: 0.75s;
+    transition: 0.33s;
     background-size: auto 110% !important;
 }
 
@@ -70,7 +70,7 @@ http://jsfiddle.net/fzzxs759/16/
 }
 
 .higher:hover {
-    transition: 0.75s;
+    transition: 0.33s;
     background-size: 110% auto !important;
 }
 
