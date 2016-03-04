@@ -1,5 +1,5 @@
 body {
-    background: #ffffff;
+    background: #080808;
 }
 
 #main-section {
@@ -44,7 +44,6 @@ http://jsfiddle.net/fzzxs759/16/
     overflow: hidden;
     display: inline-block;
     margin: 20px;
-    border: 1px solid black;
     cursor: pointer;
 }
 
