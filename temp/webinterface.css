@@ -53,13 +53,24 @@ http://jsfiddle.net/fzzxs759/16/
     float: left;
 }
 
-.widder:hover {
-    transition: 0.3s;
+.wider{
+    background-position: center !important;
+    background-size: auto 100% !important;
+}
+
+
+.wider:hover {
+    transition: 0.75s;
     background-size: auto 110% !important;
 }
 
-.heigher:hover {
-    transition: 0.3s;
+.higher{
+    background-position: center !important;
+    background-size: 100%  auto !important;    
+}
+
+.higher:hover {
+    transition: 0.75s;
     background-size: 110% auto !important;
 }
 

@@ -16,23 +16,36 @@ var linksArray = {
 
 $(document).ready(function () {
     //здесь мы определяем размеры изображений
-    var src = linksArray[("link1")];
-    var img = document.createElement("img");
-    img.src = src;
-    img.onload = function () {
-        console.log(img.width + " - W");
-        console.log(img.height + " - H");
+    for (var i = 1; i <= 12; i++) {
+        widerOrHigher(linksArray["link"+i], $("#image" + i));
     };
+
+
     //сделать функцию, которой передается ссылка и блок,
     // в котором фон - это изображение, чтоб она ставила этому блоку соответствующий класс.
 
     for (var i = 1; i <= 12; i++) {
         $(("#image" + i)).css("background", "url(" + linksArray[("link" + i)] + ") no-repeat");
-        $(("#image" + i)).css("background-position", "center");
-        $(("#image" + i)).css("background-size", "auto 100%");
-        $(("#image" + i)).addClass("widder");
+
+        //$(("#image" + i)).addClass("wider");
     }
 });
 
 
 
+function widerOrHigher(link, image){
+    var src = link;
+    var img = document.createElement("img");
+    img.src = link;
+    img.onload = function () {
+        console.log("params getted");
+        if (img.width >= img.height) {
+            image.addClass("wider"); 
+            console.log("wider"); 
+        }else{
+            image.addClass("higher"); 
+            console.log("higher");      
+        };
+        
+    };
+}
