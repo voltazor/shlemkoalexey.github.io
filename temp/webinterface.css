@@ -101,3 +101,33 @@ http://jsfiddle.net/fzzxs759/16/
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+#carousel-main{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+}
+.carousel-inner{
+    border: 1px solid white;
+    height: 100%;
+}
+.carousel-inner .item img{
+    position: relative;
+    margin: 0 auto;
+    height: 100% !important;
+    text-align: center;
+}
+
+
+
+
