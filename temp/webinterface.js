@@ -15,6 +15,16 @@ var linksArray = {
 
 
 $(document).ready(function () {
+    $('#carousel-main').slick({
+  dots: true,
+  infinite: true,
+  speed: 300,
+  respondTo: "slider"
+ });
+
+
+
+
     $(".gallery-section").append("<div class=\"section-shadow\"></div>");
     for (var i = 1; i <= 12; i++) {
         widerOrHigher(linksArray["link"+i], $("#image" + i));
