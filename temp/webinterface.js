@@ -74,6 +74,7 @@ function createCarousel(carouselBlock){
     $("#carousel-button-next").on("click", function(){
         carouselBlock.slick("slickNext");
     });
+    /*по сути следующий ивент теперь не нужен*/
     $("#carousel-button-close").on("click", function(){
         carouselBlock.fadeOut();
         mainBlockOpacityOff();
