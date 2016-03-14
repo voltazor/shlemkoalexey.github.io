@@ -1,13 +1,12 @@
 body {
     background: #080808;
-
 }
 
 #main-section {
     padding: 0;
     height: 100%;
     z-index: 1;
-    opacity: 0.1;
+    opacity: 1;
 }
 
 #header {
@@ -113,13 +112,13 @@ http://jsfiddle.net/fzzxs759/16/
 
 
 
-
 #carousel-main{
     position: fixed;
-    height: 80%;
-    width: 80%;
-    top: 10%;
-    left: 10%;   
+    height: 90%;
+    width: 90%;
+    top: 5%;
+    left: 5%;
+    display: none;
 }
 
 #carousel-main div{
@@ -138,3 +137,65 @@ http://jsfiddle.net/fzzxs759/16/
     left:0;
     right:0;
 }
+
+#carousel-button-prev,
+#carousel-button-next{
+    position: absolute;
+    height: 120%;
+    top: -10%;
+    background: none;
+    width: 6%;
+    font-family: 'slick';
+    font-size: 50px;
+    transition:0.5s;
+    border: none;
+}
+#carousel-button-close{
+    position: absolute;
+    width: 120%;
+    left: -10%;
+    top: -6%;
+    height: 11%;
+    background: none;
+    font-family: 'slick';
+    font-size: 50px;
+    transition:0.5s;  
+    background: black;  
+    border: none;
+
+}
+
+#carousel-button-prev:hover,
+#carousel-button-next:hover,
+#carousel-button-close:hover{
+    /*background: black;*/
+    transition:0.5s;
+    opacity: 1;
+    color: white;
+}
+#carousel-button-prev:focus,
+#carousel-button-next:focus,
+#carousel-button-close:focus,
+#carousel-main div:focus{
+    outline: none;
+}
+
+#carousel-button-prev{
+    left: -6%;
+}
+#carousel-button-next{
+    right: -6%;
+}
+
+
+.slick-dots li button:before
+{
+    opacity: .25;
+    color: white;
+}
+.slick-dots li.slick-active button:before
+{
+    opacity: .75;
+    color: white;
+}
+

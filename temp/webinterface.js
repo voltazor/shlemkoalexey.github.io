@@ -15,21 +15,24 @@ var linksArray = {
 
 
 $(document).ready(function () {
-    $('#carousel-main').slick({
-  dots: true,
-  infinite: true,
-  speed: 300,
-  respondTo: "slider"
- });
-
-
-
-
+    
     $(".gallery-section").append("<div class=\"section-shadow\"></div>");
     for (var i = 1; i <= 12; i++) {
         widerOrHigher(linksArray["link"+i], $("#image" + i));
         $(("#image" + i)).css("background", "url(" + linksArray[("link" + i)] + ") no-repeat");
+        
+        $("#carousel-main").append("<div><img src=\""+linksArray[("link" + i)]+"\"></div>");
     };
+    createCarousel($('#carousel-main'));
+    $(".gallery-section").click(function(){
+        $('#carousel-main').fadeIn();
+        var id = $(this).attr("id");
+        id = Number(id.substring(5));
+        console.log(id);
+        $('#carousel-main').slick("slickGoTo", id-1, true);
+    });
+    
+
 });
 
 
@@ -50,4 +53,27 @@ function widerOrHigher(link, image){
         };
     image.find(".section-preloader").remove();
     };
+}
+
+function createCarousel(carouselBlock){
+    carouselBlock.slick({
+      dots: true,
+      infinite: true,
+      speed: 300,
+      respondTo: "slider",
+      arrows: false      
+    });
+    carouselBlock.fadeOut();
+    carouselBlock.append("<button id=\"carousel-button-prev\">←</button>");
+    carouselBlock.append("<button id=\"carousel-button-next\">→</button>");
+    carouselBlock.append("<button id=\"carousel-button-close\">×</button>");
+    $("#carousel-button-prev").on("click", function(){
+        carouselBlock.slick("slickPrev");
+    });
+    $("#carousel-button-next").on("click", function(){
+        carouselBlock.slick("slickNext");
+    });
+    $("#carousel-button-close").on("click", function(){
+        carouselBlock.fadeOut();
+    });
 }
