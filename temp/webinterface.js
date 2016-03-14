@@ -7,10 +7,10 @@ var linksArray = {
     link6: "http://41.media.tumblr.com/a540013d13bc862963a119900ad16916/tumblr_o3sipsHX6j1s87941o1_1280.jpg",
     link7: "http://41.media.tumblr.com/7b6464a3956db160401c94ea9665957c/tumblr_o3kkvaf3NP1s87941o1_400.jpg",
     link8: "http://40.media.tumblr.com/11ea77ca7527ae69bf0ade25d7d2b6ff/tumblr_o3mn02YqhU1s37ot7o1_1280.jpg",
-    link9: "http://49.media.tumblr.com/f89825cd4887bd18a7cd8d9dc8242b32/tumblr_o3eh8eTkIS1s0si5no1_400.gif",
-    link10: "http://45.media.tumblr.com/4208f488c9c1dbbb958142b66ae52137/tumblr_npybzzhdu51sysgwno1_250.gif",
-    link11: "http://49.media.tumblr.com/e283b9d6793f62e685cf215a00ed0f50/tumblr_nupo73Pz1u1t3ctrho1_250.gif",
-    link12: "http://45.media.tumblr.com/adc1dae467b02702acfa08005da33f4b/tumblr_n2j1dfCWep1sqkjcto3_400.gif"
+    link9: "http://41.media.tumblr.com/fc708d31e57e8150a868fad895ec6100/tumblr_o37crbxIvo1s87941o1_500.jpg",
+    link10: "http://41.media.tumblr.com/bdab07f76a7650cd2a85d8d667ab63f5/tumblr_o3fjf96KWq1shlzkjo1_500.jpg",
+    link11: "http://36.media.tumblr.com/f204364c105ab9d30c362890ad189aaa/tumblr_o3fjf4IsUH1shlzkjo1_1280.jpg",
+    link12: "http://40.media.tumblr.com/46362b697212bd3592739689c91728c7/tumblr_o3fjguFLit1shlzkjo1_1280.jpg"
 };/*
 var linksArray = {
     link1: "http://lorempixel.com/400/300/",
