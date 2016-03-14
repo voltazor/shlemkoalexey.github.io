@@ -151,6 +151,7 @@ http://jsfiddle.net/fzzxs759/16/
     border: none;
 }
 #carousel-button-close{
+    font-weight: bold;
     position: absolute;
     width: 120%;
     left: -10%;
@@ -160,8 +161,9 @@ http://jsfiddle.net/fzzxs759/16/
     font-family: 'slick';
     font-size: 50px;
     transition:0.5s;  
-    background: black;  
     border: none;
+    text-align: right;
+    padding-right: 10%;
 
 }
 
@@ -199,3 +201,7 @@ http://jsfiddle.net/fzzxs759/16/
     color: white;
 }
 
+
+#main-section .opacity02{
+    opacity: 0.2;
+}

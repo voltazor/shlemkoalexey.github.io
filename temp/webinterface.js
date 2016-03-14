@@ -30,6 +30,7 @@ $(document).ready(function () {
         id = Number(id.substring(5));
         console.log(id);
         $('#carousel-main').slick("slickGoTo", id-1, true);
+        mainBlockOpacityOn();
     });
     
 
@@ -75,5 +76,22 @@ function createCarousel(carouselBlock){
     });
     $("#carousel-button-close").on("click", function(){
         carouselBlock.fadeOut();
+        mainBlockOpacityOff();
     });
+
+    $("#carousel-main").bind('click', function(e) {
+        if(!$(e.target).is('#carousel-button-prev, #carousel-button-next, img, button')) {
+        carouselBlock.fadeOut();
+        mainBlockOpacityOff();         
+    }
+});
+
+
+}
+
+function mainBlockOpacityOn(){
+    $("#main-section").fadeTo(500, 0.3);
+}
+function mainBlockOpacityOff(){
+    $("#main-section").fadeTo(500, 1);  
 }
