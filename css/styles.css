@@ -209,10 +209,11 @@ body {
 
 .portfolio-hover-link {
     border: none;
+    transition: 0.5s;
 }
 
 .portfolio-hover-link:hover {
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     transition: 0.5s;
     border: none;
 }

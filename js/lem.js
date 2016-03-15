@@ -1,7 +1,7 @@
 $(document).ready(function () {
     $("button").click(function () {
         $("#result").empty();
-        for (var i = 1; i < 11; i++) {
+        for (var i = 1; i <= 5; i++) {
             setVar1();
             setVar2(var1);
             setVar3(var2);

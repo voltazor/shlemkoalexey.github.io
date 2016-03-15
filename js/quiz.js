@@ -62,7 +62,7 @@ function bindEvents(objectKeyForQuestion) {
                 question(QUESTION, ANSWER);                
             }else{
                 $("#question-number").html("Конец.");  
-                $("#question-text").html("Количество правильных ответов - " + numberOfCorrect(playerAnswers)+". Еще раз?");
+                $("#question-text").html("Количество правильных ответов - " + numberOfCorrect(playerAnswers)+".");
                 $("#generate-question, #theme-selector").prop("disabled",false);
                 $("#choose-1, #choose-2").prop("disabled",true);
             };
@@ -76,7 +76,7 @@ function bindEvents(objectKeyForQuestion) {
                 question(QUESTION, ANSWER);                
             }else{
                 $("#question-number").html("Конец.");  
-                $("#question-text").html("Количество правильных ответов - " + numberOfCorrect(playerAnswers)+". Еще раз?");
+                $("#question-text").html("Количество правильных ответов - " + numberOfCorrect(playerAnswers)+".");
                 $("#generate-question, #theme-selector").prop("disabled",false);
                 $("#choose-1, #choose-2").prop("disabled",true);
             };
@@ -91,7 +91,7 @@ function bindEvents(objectKeyForQuestion) {
                 question(QUESTION, ANSWER);                
             }else{
                 $("#question-number").html("Конец."); 
-                $("#question-text").html("Количество правильных ответов - " + numberOfCorrect(playerAnswers)+". Еще раз?");
+                $("#question-text").html("Количество правильных ответов - " + numberOfCorrect(playerAnswers)+".");
                 $("#generate-question, #theme-selector").prop("disabled",false);
                 $("#choose-1, #choose-2").prop("disabled",true);
             };   
@@ -106,7 +106,7 @@ function bindEvents(objectKeyForQuestion) {
                 question(QUESTION, ANSWER);                
             }else{
                 $("#question-number").html("Конец.");                
-                $("#question-text").html("Количество правильных ответов - " + numberOfCorrect(playerAnswers)+". Еще раз?");
+                $("#question-text").html("Количество правильных ответов - " + numberOfCorrect(playerAnswers)+".");
                 $("#generate-question, #theme-selector").prop("disabled",false);
                 $("#choose-1, #choose-2").prop("disabled",true);
             };     

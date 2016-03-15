@@ -94,25 +94,43 @@
             <div id="collapseOne" class="panel-collapse collapse out">
                 <div class="panel-body">
                     <div class="row">
-                        <div class="col-xs-4">
-                            <a href="res/examplepage.html" class="thumbnail portfolio-hover-link">
-                                <img src="src/examples.png" alt="Random Quote Generator">
-                                Несколько примеров решения простых задач.
+                        <div class="col-xs-4" data-toggle="tooltip" data-placement="right" title="Показывает погоду в местности пользователя. Приложение отправляет два AJAX-запроса: первым устанавливается текущее местоположение, а вторым получается информация о погоде в этой местности">
+                            <a href="res/weather.html" class="thumbnail portfolio-hover-link" target="_blank">
+                                <img src="src/weather.png" alt="Weather app">
+                                Приложение погоды для текущего местоположения.
                             </a>
                         </div>
-
-                        <div class="col-xs-4">
-                            <a href="http://relly-l.github.io/" class="thumbnail portfolio-hover-link" target="_blank">
-                                <img src="src/pluto.png" alt="Small site about Pluto">
-                                Маленький сайт про планету Плутон.
-                            </a>
-                        </div>
-
-                        <div class="col-xs-4">
-                            <a href="https://github.com/ShlemkoAlexey" class="thumbnail portfolio-hover-link"
+                        <div class="col-xs-4" data-toggle="tooltip" data-placement="bottom" title="Игра-викторина. Генерация вопросов происходит процедурно на основе массивов обьектов, каждый из которых имеет ряд параметров">
+                            <a href="res/quiz.html" class="thumbnail portfolio-hover-link"
                                target="_blank">
-                                <img src="src/github.png" alt="My Github">
-                                Мой аккаунт на гитхабе.
+                                <img src="src/quiz.png" alt="Quiz">
+                                Игра-викторина с процедурно-генерируемыми вопросами.
+                            </a>
+                        </div>
+                        <div class="col-xs-4"  data-toggle="tooltip" data-placement="left" title="Воспроизведение аудиофайла с синхронным звучанию выводом текста на экран">
+                            <a href="res/music.html" class="thumbnail portfolio-hover-link" target="_blank">
+                                <img src="src/music.png" alt="Audio visualization">
+                                Аудио-текстовая визуализация.
+                            </a>
+                        </div>                        
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-4" data-toggle="tooltip" data-placement="right" title="Галерея для удобного просмотра изображений. Ссылки на изображения берутся из обьекта с данными, на их основе формируется общая страница и подключается карусель для просмотра каждого из изображений крупным планом">
+                            <a href="#" class="thumbnail portfolio-hover-link" >
+                                <img src="src/examplepage.jpg" alt="Gallery">
+                                Галерея изображений (в разработке).
+                            </a>
+                        </div>
+                        <div class="col-xs-4" data-toggle="tooltip" data-placement="top" title="Небольшие интересные скрипты или реализованные задачи">
+                            <a href="res/examplepage.html" class="thumbnail portfolio-hover-link" target="_blank">
+                                <img src="src/examplepage.jpg" alt="Random scripts">
+                                Небольшие интересные скрипты.
+                            </a>
+                        </div>
+                        <div class="col-xs-4" data-toggle="tooltip" data-placement="left" title="https://github.com/ShlemkoAlexey">
+                            <a href="https://github.com/ShlemkoAlexey" class="thumbnail portfolio-hover-link" target="_blank">
+                                <img src="src/github.png" alt="Github">
+                                Аккаунт на гитхабе.
                             </a>
                         </div>
                     </div>
@@ -153,5 +171,5 @@
 
     <script src="js/jquery-1.11.3.js" type="text/javascript"></script>
     <script src="js/bootstrap.js" type="text/javascript"></script>
-    <script src="" type="text/javascript"></script>
+    <script src="js/mainpage.js" type="text/javascript"></script>
 </body>

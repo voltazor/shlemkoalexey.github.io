@@ -30,21 +30,14 @@ h2{
     transition: 0.5s;
     text-decoration: none;   
 }
-
-
-.first-example-text,
-.second-example-text,
-.third-example-text,
-.fourth-example-text,
-.fifth-example-text,
-.sixth-example-text{
-    display: none;
-    opacity: 0.0;
+.row{
+    position: relative;
+    height: 100%;
 }
-
-.example-visible{
-    display: block;
-}
-.example-visible-opacity{
-   opacity: 1.0;    
+.example-image{
+    right: 0;
+    position: absolute;
+    height: 100%;
+    background: center;
+    background-repeat: no-repeat;
 }

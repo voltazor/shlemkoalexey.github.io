@@ -133,7 +133,7 @@ http://jsfiddle.net/fzzxs759/16/
     height: 120%;
     top: -10%;
     background: none;
-    width: 6%;
+    width: 25%;
     font-family: 'slick';
     font-size: 50px;
     transition: 0.5s;
@@ -144,12 +144,12 @@ http://jsfiddle.net/fzzxs759/16/
     font-weight: bold;
     position: absolute;
     width: 120%;
-    left: -10%;
+    left: -5.5%;
     top: -6%;
     height: 11%;
     background: none;
     font-family: 'slick';
-    font-size: 50px;
+    font-size: 75px;
     transition: 0.5s;
     border: none;
     text-align: right;
@@ -174,11 +174,11 @@ http://jsfiddle.net/fzzxs759/16/
 }
 
 #carousel-button-prev {
-    left: -6%;
+    left: -15%;
 }
 
 #carousel-button-next {
-    right: -6%;
+    right: -15%;
 }
 
 .slick-dots li button:before {
@@ -193,4 +193,11 @@ http://jsfiddle.net/fzzxs759/16/
 
 #main-section .opacity02 {
     opacity: 0.2;
+}
+
+.slick-dots li button:before{
+    font-size: 18px;
+}
+.slick-dots{
+    bottom: -3%;
 }
