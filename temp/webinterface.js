@@ -1,4 +1,4 @@
-var linksArray = {
+/*var linksArray = {
     link1: "http://36.media.tumblr.com/74c4e7a08ef4d797e8cd286bbf7492ae/tumblr_o3sixgNzIQ1shlzkjo1_1280.jpg",
     link2: "http://40.media.tumblr.com/6c431e10e2c5177b9121badb38b548db/tumblr_o3siqzecKm1s87941o1_500.jpg",
     link3: "http://41.media.tumblr.com/0154ff588d18c11f6bf116caf2f6caea/tumblr_o3sis5EuSI1s87941o1_500.jpg",
@@ -11,7 +11,7 @@ var linksArray = {
     link10: "http://41.media.tumblr.com/bdab07f76a7650cd2a85d8d667ab63f5/tumblr_o3fjf96KWq1shlzkjo1_500.jpg",
     link11: "http://36.media.tumblr.com/f204364c105ab9d30c362890ad189aaa/tumblr_o3fjf4IsUH1shlzkjo1_1280.jpg",
     link12: "http://40.media.tumblr.com/46362b697212bd3592739689c91728c7/tumblr_o3fjguFLit1shlzkjo1_1280.jpg"
-};/*
+};*/
 var linksArray = {
     link1: "http://lorempixel.com/400/300/",
     link2: "http://lorempixel.com/300/400/",
@@ -26,7 +26,7 @@ var linksArray = {
     link11: "http://lorempixel.com/g/200/400/",
     link12: "http://lorempixel.com/400/200/"
 };
-*/
+
 $(document).ready(function () {
 
     $(".gallery-section").append("<div class=\"section-shadow\"></div>");
