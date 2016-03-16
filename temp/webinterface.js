@@ -82,6 +82,8 @@ function createCarousel(carouselBlock) {
     carouselBlock.append("<button id=\"carousel-button-prev\">←</button>");
     carouselBlock.append("<button id=\"carousel-button-next\">→</button>");
     carouselBlock.append("<button id=\"carousel-button-close\">×</button>");
+    carouselBlock.append("<div class=\"blocker1\"></div>");
+    carouselBlock.append("<div class=\"blocker2\"></div>");
     $("#carousel-button-prev").on("click", function () {
         carouselBlock.slick("slickPrev");
     });
@@ -95,7 +97,7 @@ function createCarousel(carouselBlock) {
     });
 
     $("#carousel-main").bind('click', function (e) {
-        if (!$(e.target).is('#carousel-button-prev, #carousel-button-next, img, button, ul')) {
+        if (!$(e.target).is('#carousel-button-prev, #carousel-button-next, img, button, .slick-dots')) {
             carouselBlock.fadeOut();
             mainBlockOpacityOff();
         }
