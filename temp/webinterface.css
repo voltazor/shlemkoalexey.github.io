@@ -104,10 +104,11 @@ http://jsfiddle.net/fzzxs759/16/
 #carousel-main {
     position: fixed;
     height: 90%;
-    width: 90%;
+    width: 80%;
     top: 5%;
-    left: 5%;
-    display: none;
+    left: 10%;
+    /*display: none;*/
+    border: 1px dashed red;
 }
 
 #carousel-main div {
@@ -133,28 +134,30 @@ http://jsfiddle.net/fzzxs759/16/
     height: 120%;
     top: -10%;
     background: none;
-    width: 25%;
+    width: 13%;
     font-family: 'slick';
     font-size: 50px;
     transition: 0.5s;
     border: none;
+    border: 1px dashed white;
 }
 
 #carousel-button-close {
     font-weight: bold;
     position: absolute;
-    width: 120%;
-    left: -5.5%;
-    top: -6%;
-    height: 11%;
+    width: 19%;
+    right: -18%;
+    top: -10%;
+    height: 15%;
     background: none;
     font-family: 'slick';
-    font-size: 75px;
+    font-size: 50px;
+    padding-left: 3%;
     transition: 0.5s;
     border: none;
     text-align: right;
     padding-right: 10%;
-
+    border: 2px dashed blue;
 }
 
 #carousel-button-prev:hover,
@@ -174,11 +177,11 @@ http://jsfiddle.net/fzzxs759/16/
 }
 
 #carousel-button-prev {
-    left: -15%;
+    left: -13%;
 }
 
 #carousel-button-next {
-    right: -15%;
+    right: -13%;
 }
 
 .slick-dots li button:before {
@@ -200,4 +203,6 @@ http://jsfiddle.net/fzzxs759/16/
 }
 .slick-dots{
     bottom: -3%;
+    border: 1px dashed yellow;
+    
 }

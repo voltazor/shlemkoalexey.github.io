@@ -78,7 +78,7 @@ function createCarousel(carouselBlock) {
         respondTo: "slider",
         arrows: false
     });
-    carouselBlock.fadeOut();
+    //carouselBlock.fadeOut();
     carouselBlock.append("<button id=\"carousel-button-prev\">←</button>");
     carouselBlock.append("<button id=\"carousel-button-next\">→</button>");
     carouselBlock.append("<button id=\"carousel-button-close\">×</button>");
@@ -95,7 +95,7 @@ function createCarousel(carouselBlock) {
     });
 
     $("#carousel-main").bind('click', function (e) {
-        if (!$(e.target).is('#carousel-button-prev, #carousel-button-next, img, button')) {
+        if (!$(e.target).is('#carousel-button-prev, #carousel-button-next, img, button, ul')) {
             carouselBlock.fadeOut();
             mainBlockOpacityOff();
         }
