@@ -7,6 +7,7 @@ body {
     height: 100%;
     z-index: 1;
     opacity: 1;
+    display: fixed;
 }
 
 #header {
@@ -108,7 +109,6 @@ http://jsfiddle.net/fzzxs759/16/
     top: 5%;
     left: 10%;
     display: none;
-    border: 1px dashed red;
 }
 
 #carousel-main div {
@@ -139,7 +139,6 @@ http://jsfiddle.net/fzzxs759/16/
     font-size: 50px;
     transition: 0.5s;
     border: none;
-    border: 1px dashed white;
 }
 
 #carousel-button-close {
@@ -157,7 +156,6 @@ http://jsfiddle.net/fzzxs759/16/
     border: none;
     text-align: right;
     padding-right: 10%;
-    border: 2px dashed blue;
 }
 
 #carousel-button-prev:hover,
@@ -202,8 +200,7 @@ http://jsfiddle.net/fzzxs759/16/
     font-size: 18px;
 }
 .slick-dots{
-    bottom: -1.5%;
-    border: 1px dashed yellow;    
+    bottom: -1.5%;  
 }
 .blocker1,
 .blocker2{

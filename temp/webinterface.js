@@ -97,7 +97,7 @@ function createCarousel(carouselBlock) {
     });*/
 
     $("#carousel-main").bind('click', function (e) {
-        if (!$(e.target).is('#carousel-button-prev, #carousel-button-next, img, .slick-dots')) {
+        if (!$(e.target).is('#carousel-button-prev, #carousel-button-next, img, .slick-dots, li, .slick-dots li button')) {
             carouselBlock.fadeOut();
             mainBlockOpacityOff();
         }
@@ -116,3 +116,4 @@ function mainBlockOpacityOff() {
     //$("body").css("overflow", "scroll");
     $(".section-shadow").addClass("section-shadow-hover");
 }
+
