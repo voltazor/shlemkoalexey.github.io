@@ -84,7 +84,7 @@ http://jsfiddle.net/fzzxs759/16/
     transition: 0.3s;
 }
 
-.section-shadow:hover {
+.section-shadow-hover:hover {
     opacity: 0;
     transition: 0.3s;
 }
@@ -107,7 +107,7 @@ http://jsfiddle.net/fzzxs759/16/
     width: 80%;
     top: 5%;
     left: 10%;
-    /*display: none;*/
+    display: none;
     border: 1px dashed red;
 }
 

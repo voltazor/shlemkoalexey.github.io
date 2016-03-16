@@ -29,7 +29,7 @@ var linksArray = {
 
 $(document).ready(function () {
 
-    $(".gallery-section").append("<div class=\"section-shadow\"></div>");
+    $(".gallery-section").append("<div class=\"section-shadow section-shadow-hover\"></div>");
     for (var i = 1; i <= 12; i++) {
         widerOrHigher(linksArray["link" + i], $("#image" + i));
         $(("#image" + i)).css("background", "url(" + linksArray[("link" + i)] + ") no-repeat");
@@ -91,13 +91,13 @@ function createCarousel(carouselBlock) {
         carouselBlock.slick("slickNext");
     });
     /*по сути следующий ивент теперь не нужен*/
-    $("#carousel-button-close").on("click", function () {
+    /*$("#carousel-button-close").on("click", function () {
         carouselBlock.fadeOut();
         mainBlockOpacityOff();
-    });
+    });*/
 
     $("#carousel-main").bind('click', function (e) {
-        if (!$(e.target).is('#carousel-button-prev, #carousel-button-next, img, button, .slick-dots')) {
+        if (!$(e.target).is('#carousel-button-prev, #carousel-button-next, img, .slick-dots')) {
             carouselBlock.fadeOut();
             mainBlockOpacityOff();
         }
@@ -108,7 +108,11 @@ function createCarousel(carouselBlock) {
 
 function mainBlockOpacityOn() {
     $("#main-section").fadeTo(500, 0.15);
+    //$("body").css("overflow", "hidden");
+    $(".section-shadow").removeClass("section-shadow-hover");
 }
 function mainBlockOpacityOff() {
     $("#main-section").fadeTo(500, 1);
+    //$("body").css("overflow", "scroll");
+    $(".section-shadow").addClass("section-shadow-hover");
 }
