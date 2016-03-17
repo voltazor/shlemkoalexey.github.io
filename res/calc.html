@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Calculator</title>
+    <link rel="shortcut icon" href="../src/icon.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../css/calc.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet' type='text/css'>
+<!-- 
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-72424319-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+-->
+</head>
+<body>
+    <div id="calc-main">
+        <div id="calc-output">
+            0
+        </div>
+        <div class="row">
+            <div class="col-xs-9">
+                <div class="row">
+                    <div class="col-xs-4">
+                        <button class="calc-button" id="btn7">7</button>
+                    </div>
+                    <div class="col-xs-4">
+                        <button class="calc-button" id="btn8">8</button>
+                    </div>
+                    <div class="col-xs-4">
+                        <button class="calc-button" id="btn9">9</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-4">
+                        <button class="calc-button" id="btn4">4</button>
+                    </div>
+                    <div class="col-xs-4">
+                        <button class="calc-button" id="btn5">5</button>
+                    </div>
+                    <div class="col-xs-4">
+                        <button class="calc-button" id="btn6">6</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-4">
+                        <button class="calc-button" id="btn1">1</button>
+                    </div>
+                    <div class="col-xs-4">
+                        <button class="calc-button" id="btn2">2</button>
+                    </div>
+                    <div class="col-xs-4">
+                        <button class="calc-button" id="btn3">3</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-4">
+                        <button class="calc-button" id="btndot">.</button>
+                    </div>
+                    <div class="col-xs-4">
+                        <button class="calc-button" id="btn0">0</button>
+                    </div>
+                    <div class="col-xs-4">
+                        <button class="calc-button" id="btneq">=</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-3">
+                <button class="calc-button" id="btnC">C</button>
+                <button class="calc-button" id="btndiv">/</button>
+                <button class="calc-button" id="btnmul">*</button>
+                <button class="calc-button" id="btnmin">-</button>
+                <button class="calc-button" id="btnplus">+</button>
+            </div>
+        </div>
+
+
+
+    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="../js/calc.js"></script>
+</body>
