@@ -17,6 +17,9 @@ $(document).ready(function(){
     $(".example-list li:nth-child(6)").mouseenter(function(){
         $(".example-image").css("background-image", "url(../src/lem.png)");
     });
+    $(".example-list li:nth-child(7)").mouseenter(function(){
+        $(".example-image").css("background-image", "url(../src/8ball.png)");
+    });
 
 
 

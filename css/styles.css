@@ -225,12 +225,60 @@ body {
 .footer {
     color: white;
     background-color: #1268b3;
-    padding: 20px;
-    text-align: center;
-
 }
+.skill-header{
+    border-bottom: 2px solid #e7e7e7;
+    text-align: center;    
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+}
+.skill-container{
+    position: relative;
+    height: 60px;
+    width: auto;
+    border-bottom: 2px solid #e7e7e7;
+    padding: 10px 0 10px 10%;    
+}
+.skill-image{
+    height: 100%;
+    display: inline-block;
+}
+.skill-name{
+    padding-left: 20px;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 28px;
+    vertical-align: middle;
+}
+.skill-bar{
+    position: absolute;
+    right: 10%;
+    top: 30%;
+    display: inline-block;
+    background: #3b9ff7;
+    width: 50%;
+    height: 40%;
+    border-radius: 5px;
+}
+.skill-bar-complete{
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: #124877;
+    border-radius: 5px;
+}
+.html-width{width: 70%;}
+.css-width{width: 60%;}
+.js-width{width: 50%;}
+.jquery-width{width: 55%;}
+.bootstrap-width{width: 65%;}
+.photoshop-width{width: 15%;}
+/*3b9ff7
 
-.footer div {
+124877*/
+/*.footer div {
     padding: 10px;
     border: 1px solid #e7e7e7;
     display: inline-block;
@@ -291,7 +339,7 @@ body {
 
 .footer div .photoshop-width {
     width: 40px;
-}
+}*/
 
 /*FOOTER END*/
 

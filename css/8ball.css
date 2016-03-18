@@ -1,0 +1,54 @@
+#ball-block{
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+#ball{
+  width: 400px;
+  height: 400px;
+  background: url("../src/8ball.png");
+  background-size: cover;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: table;
+  cursor: pointer;
+}
+#ball-text{
+  position: absolute;
+  width: 30%;
+  height: 8%;
+  color: white;
+  font-size: 13px;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+#language-switch{
+  position: absolute;
+  width: 30px;
+  height: 20px;
+  left: -30px;
+  top:-20px;
+  background: black;
+  opacity: .5;
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 5px;
+  cursor: pointer;
+}
