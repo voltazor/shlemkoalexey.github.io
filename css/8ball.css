@@ -40,15 +40,17 @@
   background: none;
   border: none;
   outline: none;
+  background: url("../src/8balltriangle.png");
+  background-position: center;
+  background-size: 130%;
+  padding: 0 5%;
 }
 #language-switch{
   position: absolute;
   width: 36px;
-  height: 26px;
+  height: 28px;
   left: -36px;
   top:-26px;
-  background: black;
-  opacity: .5;
   color: white;
   font-size: 15px;
   text-align: center;
@@ -56,4 +58,10 @@
   border-radius: 5px;
   cursor: pointer;
   padding: 3px;
+}
+.darkblue{
+  background: dodgerblue ;  
+}
+.darkred{
+ background: firebrick ;  
 }

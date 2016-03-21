@@ -35,7 +35,6 @@ var answersRU=[
     "Спроси позже",
     "Лучше не рассказывать",
     "Сейчас нельзя предсказать",
-    "Сконцентрируйся и спроси опять",
     "Даже не думай",
     "Мой ответ — «нет»",
     "По моим данным — «нет»",
@@ -56,9 +55,14 @@ $("#language-switch").click(function(){
     if ($(this).html()=="RU") {
         $(this).html("EN");
         answerLang = "EN";
+        $(this).addClass("darkred", animationSpeed);
+        $(this).removeClass("darkblue", animationSpeed);
     }else{
         $(this).html("RU");
         answerLang = "RU";
+        $(this).addClass("darkblue", animationSpeed);
+        $(this).removeClass("darkred", animationSpeed);
+
     }
 });
 
@@ -76,5 +80,11 @@ function setAnswer(){
     $("#ball-text").fadeOut(animationSpeed, function(){
         $("#ball-text").html(answerText);
         $("#ball-text").fadeIn(animationSpeed);
+        setTriangleRotation();
     });   
+}
+
+function setTriangleRotation(){
+    var deg = randomInteger(-30,30);
+    $("#ball-text").css("transform", "rotate("+deg+"deg)");
 }
