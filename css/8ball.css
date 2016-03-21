@@ -7,6 +7,7 @@
   bottom: 0;
   left: 0;
   right: 0;
+  font-family: 'Kurale', serif;
 }
 #ball{
   width: 400px;
@@ -25,7 +26,7 @@
 #ball-text{
   position: absolute;
   width: 30%;
-  height: 8%;
+  height: 30%;
   color: white;
   font-size: 13px;
   margin: auto;
@@ -36,19 +37,23 @@
   display: table-cell;
   text-align: center;
   vertical-align: middle;
+  background: none;
+  border: none;
+  outline: none;
 }
 #language-switch{
   position: absolute;
-  width: 30px;
-  height: 20px;
-  left: -30px;
-  top:-20px;
+  width: 36px;
+  height: 26px;
+  left: -36px;
+  top:-26px;
   background: black;
   opacity: .5;
   color: white;
-  font-size: 16px;
+  font-size: 15px;
   text-align: center;
   vertical-align: middle;
   border-radius: 5px;
   cursor: pointer;
+  padding: 3px;
 }
