@@ -1,8 +1,5 @@
 $(document).ready(function(){
-
-
-  var nowDate = new Date(2016, 3, 1);
-  
+  var nowDate = new Date();  
   var requestAdress = "https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20html%20where%20url%3D'http%3A%2F%2Ftrofey.net%2Findex.php%3Foption%3Dcom_tvguide%26view%3Dprograms%26format%3Draw%26video%3D1%26date%3D"+stringFromDate(nowDate)+"'&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys";
   $.getJSON(requestAdress)
   .done(function(data){     
@@ -15,47 +12,31 @@ $(document).ready(function(){
   };
   console.log(stringFromDate(nowDate));
   for(var i = 0; i < $(".red").length; i++){
-    var nessesaryString = $(".red:nth("+i+")").html().substring(0,6) + $(".red:nth("+i+")").html().substring(5).replace(/\s+/g, '');
-    
+    //var nessesaryString = $(".red:nth("+i+")").html().substring(0,6) + $(".red:nth("+i+")").html().substring(5).replace(/\s+/g, '');
+    var nessesaryString = $(".red:nth("+i+")").html().substring(0,5);
     nessesaryString = makeStringShorter(nessesaryString);
-    $(".sms-frame").append(nessesaryString + " ");
+    $(".sms-frame").append(nessesaryString + "///");
   }
-
-
-  console.log($(".sms-frame").html().length);
-  
+  console.log($(".sms-frame").html().length);  
 });
-
 });
-
 $("#send-sms-btn").click(function(){
-  console.log("start");
-  //var xmlData = "<?xml version=\"1.0\" encoding=\"UTF-8\"?><SMS><operations><operation>BALANCE</operation></operations><authentification><username></username><password></password></authentification></SMS>";
-  //var smsUrl = "http://api.atompark.com/members/sms/xml.php";
-  
-  // $.ajax({
-  //   url: smsUrl,
-  //   data: xmlData, 
-  //   type: 'POST',
-  //   contentType: "text/xml",
-  //   dataType: "text",
-  //   success : function (xml){
-  //     console.log(xml);
-  //     console.log("it works!");
-  //   },
-  //   error : function (xhr, ajaxOptions, thrownError){  
-  //       console.log(xhr.status);          
-  //       console.log(thrownError);
-  //       console.log("thrownError");
-  //   } 
-  // }); 
-  // NOT DIS SHIT AGAIN! Access-Control-Allow-Headers! FUGGIN CORS! it's JUST SIMPLE POST!
-
-
-  console.log("end");
+  var smsMessage = $(".sms-frame").html();
+  var login = "farewell47";
+  var password = "cbvajybz";
+  var phoneNumber = "380934531121";
+  console.log(smsMessage);
+  smsMessage = encodeURIComponent(smsMessage);
+  console.log(smsMessage);
+  var apiAdress = "https://smsc.ru/sys/send.php?login="+login+"&psw="+password+"&phones="+phoneNumber+"&mes="+smsMessage;
+  $.getJSON(apiAdress)
+  .done(function(data){
+   console.log("done");
+ })
+  .fail(function(){
+    console.log("fail");
+  });  
 });
-
-
 
 function unicodeToChar(text) {
  return text.replace(/\\u[\dA-F]{4}/gi, 
@@ -82,8 +63,7 @@ function clearStringFromTrash(string){
 
 function makeStringShorter(string){
   string = string.replace("Дальнийкордон", "Кордон");
-  string = string.replace("Нипуха,нипера!", "Нипуха");
-  
+  string = string.replace("Нипуха,нипера!", "Нипуха");  
   return string;
 }
 
