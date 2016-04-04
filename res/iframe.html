@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ru">
 <head>
     <title>Iframe</title>
@@ -10,9 +10,40 @@
 
 </head>
 <body>
-    <div class = "tele-frame"></div>
-    <div class = "sms-frame"></div>
-    <button id="send-sms-btn" class="btn btn-primary btn-block btn-lg">Отправить</button>
+    <div class = "container-fluid">
+        <div class="row">   
+            <div class="col-xs-7">
+                <p>Программа на сегодня:</p>
+                <div class = "tele-frame"></div>
+            </div>
+            <div class="col-xs-5">
+                <p>Текст сообщения:</p>
+                <div class = "sms-frame"></div>
+                <div class="row">
+                    <div class="col-xs-6">
+                        <select class="form-control" id="phone-select">
+                            <option>380938717845</option>
+                            <option>380979627111</option>
+                            <option>380934531121</option>
+                        </select>
+                    </div>
+                    <div class="col-xs-6" id="reciever"></div>
+                </div>
+
+
+                <button id="send-sms-btn" class="btn btn-primary btn-lg">SMS</button>
+                <div class="link-to-tele">
+                    <a href="http://trofey.net/video/telekanal-trofey" target="_blank">
+                        <img src="http://trofey.net/images/trofey/preview/images/trofey/file_20160331123020_6919-fill-228x128.png" width = "100%">
+                    Телеканал "Трофей"</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="../js/iframe.js"></script>
 </body>

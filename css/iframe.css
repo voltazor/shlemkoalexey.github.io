@@ -12,7 +12,7 @@
 .tele-frame{
   border: 1px solid rgb(235,235,235);
   border-radius: 10px;
-  margin: 20px;
+  margin-top: 20px;
   padding: 20px;
   background: rgb(250,250,250) ;
 }
@@ -20,11 +20,32 @@
 .sms-frame{
   border: 1px solid rgb(235,235,235);
   border-radius: 10px;
-  margin: 20px;
+  margin-top: 20px;
   padding: 20px;
   background: rgb(250,250,250) ;
 }
 
 #send-sms-btn{
-  padding: 20px;  
+  padding: 20px;
+  margin-top: 20px;
+  width: 100%;
+  display: block;
+}
+
+#phone-select{
+  margin-top: 20px;
+}
+
+#reciever{
+  margin-top: 20px;
+  color: darkred;
+  text-align: center;
+}
+.link-to-tele{
+  border: 1px solid rgb(235,235,235);
+  border-radius: 10px;
+  margin-top: 20px;
+  padding: 20px;
+  background: rgb(250,250,250) ;
+  text-align: center;
 }

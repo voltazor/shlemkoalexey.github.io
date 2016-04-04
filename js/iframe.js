@@ -1,4 +1,5 @@
 $(document).ready(function(){
+  outputReciever();
   var nowDate = new Date();  
   var requestAdress = "https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20html%20where%20url%3D'http%3A%2F%2Ftrofey.net%2Findex.php%3Foption%3Dcom_tvguide%26view%3Dprograms%26format%3Draw%26video%3D1%26date%3D"+stringFromDate(nowDate)+"'&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys";
   $.getJSON(requestAdress)
@@ -17,14 +18,15 @@ $(document).ready(function(){
     nessesaryString = makeStringShorter(nessesaryString);
     $(".sms-frame").append(nessesaryString + "///");
   }
-  console.log($(".sms-frame").html().length);  
-});
+  console.log($(".sms-frame").html().length);
+  $(".sms-frame").html($(".sms-frame").html().slice(0, $(".sms-frame").html().length-3));  
+});  
 });
 $("#send-sms-btn").click(function(){
   var smsMessage = $(".sms-frame").html();
-  var login = "farewell47";
-  var password = "cbvajybz";
-  var phoneNumber = "380934531121";
+  var login = "farewell47";  //логин  
+  var password = "123456"; //пароль
+  var phoneNumber = $("#phone-select").val(); //номер телефона
   console.log(smsMessage);
   smsMessage = encodeURIComponent(smsMessage);
   console.log(smsMessage);
@@ -35,7 +37,15 @@ $("#send-sms-btn").click(function(){
  })
   .fail(function(){
     console.log("fail");
-  });  
+  });
+  $(this).html("Отправлено");
+  $(this).addClass("disabled");
+  $(this).unbind();  
+});
+
+
+$("#phone-select").click(function(){
+  outputReciever();
 });
 
 function unicodeToChar(text) {
@@ -70,4 +80,14 @@ function makeStringShorter(string){
 function stringFromDate(date){
   var string = date.getFullYear()+"-"+(date.getMonth()+1)+"-"+date.getDate();
   return string;
+}
+
+function outputReciever(){
+  if ($('#phone-select').val()==="380938717845") {
+    $("#reciever").html("Дедушка");    
+  }else if ($('#phone-select').val()==="380934531121") {
+    $("#reciever").html("Лёша");    
+  }else if ($('#phone-select').val()==="380979627111") {
+    $("#reciever").html("Юра");    
+  };
 }
