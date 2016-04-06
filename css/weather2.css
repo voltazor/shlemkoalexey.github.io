@@ -1,0 +1,108 @@
+body{
+  font-family: 'Oswald', sans-serif;
+  color: gray;
+}
+
+.main-section{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.current-weather-section{
+  width: 40%;
+  height: 50%;
+  position: absolute;
+  left: 0;
+}
+
+.current-weather-section table{
+  width: 100%;
+  height: 100%;
+  border: 1px solid lightgray;
+}
+.current-weather-section table tr td{
+  padding-left: 20px;
+}
+
+
+
+
+
+
+
+
+
+.chart-section{
+
+  width: 60%;
+  height: 50%;
+  position: absolute;
+  right: 0;  
+}
+
+#chart-section{
+  width: 100%;
+  height: 100%;
+  padding: 5%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.week-weather-section{
+  width: 70%;
+  height: 50%;
+  position: absolute;
+  bottom: 0;
+  padding: 1%;    
+}
+
+.week-weather-section > div{
+  display: inline-block;
+  font-weight: 300;
+  font-size: 10px;
+  text-align: center;
+  width: 6%;
+}
+.week-weather-section > div > img{
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.control-section{
+  background: lightyellow;
+  width: 30%;
+  height: 50%;
+  position: absolute;
+  bottom: 0;
+  right: 0;    
+}

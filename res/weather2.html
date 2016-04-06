@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Weather v2</title>
+    <link rel="shortcut icon" href="../src/icon.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../css/weather2.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet' type='text/css'>
+
+<!--
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-72424319-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+-->
+
+</head>
+<body>
+  <div class="main-section">
+    <div class = "current-weather-section">            
+        <table class="table-striped">
+            <tr>
+                <td>Country</td>
+                <td id="country"></td>
+            </tr>
+            <tr>
+                <td>City</td>
+                <td id="city"></td>
+            </tr>
+            <tr>
+                <td>Temperature</td>
+                <td id="temperature"></td>
+            </tr>
+            <tr>
+                <td>Weather</td>
+                <td id="weather"></td>
+            </tr>
+            <tr>
+                <td>Wind</td>
+                <td id = "wind"></td>
+            </tr>
+            <tr>
+                <td>Pressure</td>
+                <td id = "pressure"></td>
+            </tr>
+            <tr>
+                <td>Humidity</td>
+                <td id = "humidity"></td>
+            </tr>
+            <tr>
+                <td>Sunrise</td>
+                <td id="sunrise"></td>
+            </tr>
+            <tr>
+                <td>Sunset</td>
+                <td id="sunset"></td>
+            </tr>
+
+        </table>
+    </div>
+    <div class = "chart-section">
+        <div id = "chart-section"></div>
+    </div>
+    <div class = "week-weather-section">
+
+    </div>
+    <div class = "control-section">
+
+    </div>
+</div>
+<script src="../js/jquery-1.11.3.js"></script>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script src="../js/weather2.js"></script>
+</body>
