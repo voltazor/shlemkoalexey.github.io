@@ -24,7 +24,7 @@
 </head>
 <body>
   <div class="main-section">
-    <div class = "current-weather-section">            
+    <div class = "current-weather-section">
         <table class="table-striped">
             <tr>
                 <td>Country</td>
@@ -72,7 +72,28 @@
 
     </div>
     <div class = "control-section">
-
+      <table>
+        <tr>
+          <td>
+            <button class="btn btn-block btn-primary" id="btn-back" onclick="location.href = '../index.html'"><<< Back</button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button class="btn btn-block btn-primary" id="btn-refresh">Refresh data</button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button class="btn btn-block btn-primary" disabled="disabled">reserved button 1</button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button class="btn btn-block btn-primary" disabled="disabled">reserved button 2</button>
+          </td>
+        </tr>
+      </table>
     </div>
 </div>
 <script src="../js/jquery-1.11.3.js"></script>
