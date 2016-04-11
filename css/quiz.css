@@ -36,7 +36,8 @@ body{
 }
 
 #theme-selector{
-    width: 200px;
+    width: 180px;
+    height: 40px;
     background: #ebebeb;
     padding: 5px;
     border: 1px solid #bababa;
@@ -50,7 +51,8 @@ body{
     opacity: 0.0;
 }
 #generate-question{
-    width: 200px;
+    width: 180px;
+    height: 40px;
     color: white;
     background: #269793;
     border: none;
@@ -78,15 +80,16 @@ body{
     color: white;
     background: #178ba4;
     border: none;
-    padding: 5px;
+    padding: 5px 15px;
     min-width: 8.6%;
     font-weight: bold;
     margin-right: 10px;
     margin-left: 10px;
+    height: 40px;
 }
 
 .answers{
-     margin-top: 5.2%;   
+     margin-top: 5.2%;
 }
 .answers div{
     display: inline-block;
