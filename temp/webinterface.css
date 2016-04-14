@@ -40,9 +40,9 @@ http://jsfiddle.net/fzzxs759/16/
 
 .gallery-section {
     position: relative;
-    margin: auto;    
+    margin: auto;
     overflow: hidden;
-    display: inline-block;    
+    display: inline-block;
     cursor: pointer;
     width: 24.7%;
 }
@@ -158,7 +158,7 @@ http://jsfiddle.net/fzzxs759/16/
         position: absolute;
         width: 19%;
         right: -19%;
-        top: -10.5%;
+        top: -7%;
         height: 15%;
         background: none;
         font-family: 'slick';
@@ -212,7 +212,7 @@ http://jsfiddle.net/fzzxs759/16/
         font-size: 18px;
     }
     .slick-dots{
-        bottom: -1.5%;  
+        bottom: -1.5%;
     }
     .blocker1,
     .blocker2{
